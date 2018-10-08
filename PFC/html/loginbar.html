@@ -1,0 +1,12 @@
+<!--estrutura de decisao de uso da barra de login, incluida em todas as paginas do site-->
+<?php
+	if(isset($_SESSION["logado"])){	
+	}else{
+		$_SESSION["logado"] = 0;
+	}
+	if($_SESSION["logado"] == 1){
+		include_once "../html/loginbar-logado.html";
+	}else{
+		include_once "../html/loginbar-naologado.html";
+	}
+?>	

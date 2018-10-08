@@ -1,0 +1,33 @@
+<div class="caixapesq" onclick="redirecionar(<?php echo $item->getId(); ?>);">
+	<div class="imgpesq">
+		<img src="<?php echo $item->getUrlFoto(); ?>" width="40" height="40">
+	</div>
+	<div class="nomepesq">
+		<span class="n1pesq"><?php echo $item->getNome(); ?></span>
+		<span class="n2pesq"><b><?php echo $item->getUsername(); ?></b></span>
+	</div>
+	<div class="dadospesq">
+		<span style="margin-left: 80px" class="n1pesq">
+		<?php
+			$vet = explode("-", $item->getDtNasc());
+			if ($item->getDtNasc() == "1111-11-11"){
+				echo "Idade desconhecida";
+			}else{
+				echo date("Y") - $vet[0] ." anos";
+			}
+			
+		?></span>
+		<span style="margin-left: 80px" class="n1pesq">
+		<?php 
+			$vet = explode(" - ", $item->getLocalidade());
+			if (($vet[0] == "")||($vet[0] == "Local Desconhecido")){
+				echo "Local desconhecido";
+			}else if ($vet[1] == "null"){
+				echo $vet[0];
+			}else{
+				echo $item->getLocalidade(); 
+			}
+			
+		?></span>
+	</div>
+</div>

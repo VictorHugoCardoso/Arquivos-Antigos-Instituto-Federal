@@ -1,0 +1,18 @@
+<div class="box80">
+	<div class="titulo">
+		<span class="titulotexto">Nova Mensagem</span>
+	</div>
+		<div class="inlineblock divCadastroUsuario">
+			<label class="fontspan block">Destinatário</label>
+			<div id="contemSelectMsg"><input readonly="readonly" class="inputCadastro" style="margin-left: -20px;" type="text" value="<?php echo $_GET["user"] ?>"></div><br>
+			<label class="fontspan block">Mensagem</label>
+			<input id="tituloMsg" class="inputCadastro block" placeholder="Título" <?php echo "value=' Re: ". $_GET["titulo"] ."' "; ?> >
+			<textarea id="textareaMsg" class="textareaCadastro block" placeholder="Digite aqui sua mensagem" rows="10" cols="50"></textarea>
+			<?php echo "<script>focar('textareaMsg')</script>";?>
+			<div class="botao">
+				<input id="responderMensagem" class="submit" type="submit" value="Enviar">
+				<a href="telaMensagem.php?acao=listarRecebidas"><input class="submit" type="button" value="Cancelar"></a>
+				<input id="user" class="hidden" value="<?php echo $_GET['user']; ?>">
+			</div>
+		</div>
+</div>

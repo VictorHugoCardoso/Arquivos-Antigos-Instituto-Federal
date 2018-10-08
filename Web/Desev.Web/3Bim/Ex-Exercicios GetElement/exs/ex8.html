@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> EX 8 </title>
+		<script language="Javascript">
+			function destaca(){
+				var div = document.getElementById("emDestaque");
+				document.write("<table border='1' cellpadding='10'>");
+				for (var x = 0; x <  10; x++){
+					document.write("<tr>"+x+" </tr>");
+					for (var y = 0; y < 20 ;y++){
+						document.write("<td>"+y+"</td>");
+					}
+				}
+				document.write("</table>");
+			}
+		</script>
+	</head>
+
+	<body onload="destaca()">
+		<div id="emDestaque">
+		</div>
+	</body>
+
+</html>
+ 

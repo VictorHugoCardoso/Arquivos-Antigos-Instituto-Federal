@@ -1,0 +1,13 @@
+É o princípio pelo qual uma classe pode se ter em uma classe 2 ou mais métodos com o mesmo nome mas com comportamentos diferentes 
+
+1 - Sobrecarga de Métodos (overload)
+	Na mesma classe, 2 ou + métodos com o mesmo nome, mas com assinaturas diferentes 
+		Ex: Public void acelerar (float percent)
+		    Public void acelerar (int roda1,int roda2,int roda3,int roda4,float percent)
+
+2 - Por Herança	
+	Quando uma classe filha reescreve um método existente na classe pai
+		Ex: classe peça com método mover()
+		- classes filhas com movimento diferente sobrescrevem o método mover()
+
+

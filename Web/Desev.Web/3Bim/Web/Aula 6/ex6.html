@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Ex6</title>
+	    <script language="Javascript">
+            function informaMes(m){
+                var mes = "";                
+                switch(m){
+		            case 0:
+			            mes = "Janeiro";
+                        break;
+		            case 1:
+			            mes = "Fevereiro";
+                        break;
+		            case 2:
+			            mes = "Março";
+                        break;
+		            case 3:
+			            mes = "Abril";
+                        break;
+		            case 4:
+			            mes = "Maio";
+                        break;
+		            case 5:
+			            mes = "Junho";
+                        break;
+		            case 6:
+			            mes = "Julho";
+                        break;
+		            case 7:
+			            mes = "Agosto";
+                        break;
+		            case 8:
+			            mes = "Setembro";
+                        break;
+		            case 9:
+			            mes = "Outubro";
+                        break;
+		            case 10:
+			            mes = "Novembro";
+                        break;
+		            case 11:
+			            mes = "Dezembro";
+                        break;
+                    default:
+                        mes = "Mês inválido.";
+                        break;
+		        }
+                return mes;
+            }
+            function informaSemana(s){
+                var sem = "";
+                switch(s){
+                    case 0:
+                        sem = "Domingo";
+                        break;
+                    case 1:
+                        sem = "Segunda-feira";
+                        break;
+                    case 2:
+                        sem = "Terça-feira";
+                        break;
+                    case 3:
+                        sem = "Quarta-feira";
+                        break;
+                    case 4:
+                        sem = "Quinta-feira";
+                        break;
+                    case 5:
+                        sem = "Sexta-feira";
+                        break;
+                    case 6:
+                        sem = "Sábado";
+                        break;
+                    default:
+                        sem = "Dia inválido.";
+                        break;
+                }
+                return sem;
+            }
+            var hoje = new Date();
+		    var ano = hoje.getFullYear();
+		    var m = hoje.getMonth();
+		    var dia = hoje.getDate();
+		    var s = hoje.getDay();
+            document.writeln(informaSemana(s) + ", " + dia + " de " + informaMes(m) + " de " + ano);
+	    </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<div class="caixafaq">
+	<p class="perguntafaq">P: <?php echo $faq->getPergunta()."?";?>
+ 	<?php
+ 		if (isset($_SESSION["logado"])){
+ 			if (($_SESSION["logado"] == 1)&&($_SESSION["tipousr"] == 0)){
+ 				echo '<a href="javascript:excluiFaq('.$faq->getId().')" ><img src="../imagens/excluir.png" title="Excluir" class="right" width="15" height="15"></a>';
+ 			}
+ 		}
+ 	?>
+	</p>
+    <p class="respostafaq">R: <?php echo $faq->getResposta()?>
+    <?php
+ 		if (isset($_SESSION["logado"])){
+ 			if (($_SESSION["logado"] == 1)&&($_SESSION["tipousr"] == 0)){
+ 				echo '<a href="../telas/alteraFaq.php?id='.$faq->getId().'" ><img src="../imagens/alterar.png" title="Alterar" class="right alterafaq" value="'.$faq->getId().'" width="15" height="15"></a>';
+ 			}
+ 		}
+ 	?>
+    </p>
+</div>
+	
+
+

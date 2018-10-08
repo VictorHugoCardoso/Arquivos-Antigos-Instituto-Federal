@@ -1,0 +1,135 @@
+<html lang="pt-br">
+<head>
+    <meta charset="iso-8859-1">
+    <title>Prova do Formulario</title>
+	<style>
+		#txarea{
+			font-size:12px;
+			width: 300px;
+			height: 150px;
+		}
+		#site{
+			border: 2px solid navy;
+			width: 450px;
+			padding: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		var tam = 12;
+		var divTam = 450;
+		function mudaCor(selcores){
+			//alert(selcores.value);
+			var site = document.getElementById("site");
+			site.style.background = selcores.value;
+		}
+		function maiusculo(){
+			var nome = document.getElementById("nome");
+			var textoMaiusculo = nome.value;
+			textoMaiusculo = textoMaiusculo.toUpperCase();
+			nome.value = textoMaiusculo;
+		}
+		function diminui(){
+			tam = tam - 2;
+			var tx = document.getElementById("txarea");
+			tx.style.fontSize = tam+'px';
+		}
+		function aumenta(){
+			tam = tam + 2;
+			var tx = document.getElementById("txarea");
+			tx.style.fontSize = tam+'px';
+		}
+		function aumentaDiv(){
+			divTam = divTam + 10;
+			var div = document.getElementById("site");
+			div.style.width = divTam + "px";
+		}
+		function validate(){
+			var senha = document.getElementById('senha');
+			var rsenha = document.getElementById('rsenha');
+			var nome = document.getElementById("nome");
+			var valida = true;
+			var mensagem = "";
+		
+if((senha.value == rsenha.value) && (senha.value.length>3)){
+			}else{
+			mensagem = mensagem + "\n" +  'veja bem colega, as senha não bateram';
+				valida = false;
+			}
+
+			if(nome.value == ""){
+				mensagem = mensagem + "\n" +'veja bem colega, nome invalido';
+				valida = false;
+			}
+			if(valida==true){
+				mensagem = mensagem + "\n" + 'formulario enviado com imenso sucesso!';
+			}
+
+			alert(mensagem);
+
+			return valida;
+
+		}
+	</script>
+</head>
+<body>
+
+	<div id="site">
+	<input type="button" value="+" onclick="aumentaDiv();"/>
+		<form id="formulario" onsubmit="return validate();">
+			<table>
+				<tr>
+					<td>Nome:</td>
+					<td>Fulano de TAL</td>
+				</tr>
+				<tr>
+					<td>Cor:</td>
+					<td>
+			<select id="selcores" onchange="mudaCor(this);">
+				<option value="white">--Selecione--</option>
+				<option value="orange">Orange</option>
+			</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Nome:</td>
+					<td>
+				<input id="nome" type="text"/>
+	<input type="button" value="^" onclick="maiusculo();"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+		<input type="button" value="-" onclick="diminui();"/>
+		<input type="button" value="+" onclick="aumenta();"/>
+					</td>
+					<td>
+						<textarea id="txarea"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Senha:</td>
+					<td>
+						<input id="senha" type="password"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Repita senha:</td>
+					<td>
+						<input id="rsenha" type="password"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+			<input id="btn" type="submit" value="enviar"/>
+					</td>
+				</tr>
+
+			</table>
+		</form>
+
+	</div>
+  
+</body>
+</html>

@@ -1,0 +1,15 @@
+table{
+	border: 1px solid;
+	padding-right:1px;
+}
+
+input.a{
+	border-color:blue;
+	margin-left:15px;
+	margin-right:10px;
+	padding:5px;
+}
+input.b{
+	border-color:blue;
+	padding:5px;
+}

@@ -1,0 +1,169 @@
+<div class="titdescusr">Alterar Perfil</div>
+<div class="textousr margin-left10">
+	<div class="left"> 
+		<label class="labelCadastro block">Nome completo</label>
+		<label class="labelCadastro block">Data de Nascimento</label>
+		<label class="labelCadastro block">Sexo</label>
+		<label class="labelCadastro block">Estado</label>
+		<label class="labelCadastro block">Cidade</label>
+		<label class="labelCadastro block">Resumo</label>
+	</div>
+</div>
+	<div class="left block ">
+		<input type="text" class="inputAlterar block" name="nome" id="nome" id="nomeusuario" value="<?php echo $usr->getNome();?>">
+		<?php
+			if (($usr->getDtNasc() == "Não informada")||($usr->getDtNasc() == "1111-11-11")) {
+				echo '<input id="dia" type="number" min="1" max="31" class="inputAlterarDia block" placeholder="Dia">';
+				echo '<input id="mes" type="number" min="1" max="12" class="inputAlterarMes block" placeholder="Mes">';
+				echo '<input id="ano" type="number" min="1900" max="2014" class="inputAlterarAno block" placeholder="Ano">';
+			}else{
+				$vet = explode("-", $usr->getDtNasc());
+				echo '<input id="dia" type="number" min="1" max="31" class="inputAlterarDia block" placeholder="Dia" value="'.$vet[2].'">';
+				echo '<input id="mes" type="number" min="1" max="12" class="inputAlterarMes block" placeholder="Mes" value="'.$vet[1].'">';
+				echo '<input id="ano" type="number" min="1900" max="2014" class="inputAlterarAno block" placeholder="Ano" value="'.$vet[0].'">';
+			}
+		?>
+		<select name="sexo" id="sexo" class="inputAlterar block">
+			<option value="M">Masculino</option>
+			<option value="F">Feminino</option>
+			<option value="N">Não informado</option>
+
+		</select>
+
+		<select name="estado" id="estado" class="inputAlterar block">
+			<option value="null" <?php if($usr->getEstado() == "Local Desconhecido"){echo "selected";}?>>Selecione o Estado</option> 
+			<option value="AC" <?php if($usr->getEstado() == "AC"){echo "selected";}?>>Acre</option> 
+			<option value="AL" <?php if($usr->getEstado() == "AL"){echo "selected";}?>>Alagoas</option> 
+			<option value="AM" <?php if($usr->getEstado() == "AM"){echo "selected";}?>>Amazonas</option> 
+			<option value="AP" <?php if($usr->getEstado() == "AP"){echo "selected";}?>>Amapá</option> 
+			<option value="BA" <?php if($usr->getEstado() == "BA"){echo "selected";}?>>Bahia</option> 
+			<option value="CE" <?php if($usr->getEstado() == "CE"){echo "selected";}?>>Ceará</option> 
+			<option value="DF" <?php if($usr->getEstado() == "DF"){echo "selected";}?>>Distrito Federal</option> 
+			<option value="ES" <?php if($usr->getEstado() == "ES"){echo "selected";}?>>Espírito Santo</option> 
+			<option value="GO" <?php if($usr->getEstado() == "GO"){echo "selected";}?>>Goiás</option> 
+			<option value="MA" <?php if($usr->getEstado() == "MA"){echo "selected";}?>>Maranhão</option> 
+			<option value="MT" <?php if($usr->getEstado() == "MT"){echo "selected";}?>>Mato Grosso</option> 
+			<option value="MS" <?php if($usr->getEstado() == "MS"){echo "selected";}?>>Mato Grosso do Sul</option> 
+			<option value="MG" <?php if($usr->getEstado() == "MG"){echo "selected";}?>>Minas Gerais</option> 
+			<option value="PA" <?php if($usr->getEstado() == "PA"){echo "selected";}?>>Pará</option> 
+			<option value="PB" <?php if($usr->getEstado() == "PB"){echo "selected";}?>>Paraíba</option> 
+			<option value="PR" <?php if($usr->getEstado() == "PR"){echo "selected";}?>>Paraná</option> 
+			<option value="PE" <?php if($usr->getEstado() == "PE"){echo "selected";}?>>Pernambuco</option> 
+			<option value="PI" <?php if($usr->getEstado() == "PI"){echo "selected";}?>>Piauí</option> 
+			<option value="RJ" <?php if($usr->getEstado() == "RJ"){echo "selected";}?>>Rio de Janeiro</option> 
+			<option value="RN" <?php if($usr->getEstado() == "RN"){echo "selected";}?>>Rio Grande do Norte</option> 
+			<option value="RO" <?php if($usr->getEstado() == "RO"){echo "selected";}?>>Rondônia</option> 
+			<option value="RS" <?php if($usr->getEstado() == "RS"){echo "selected";}?>>Rio Grande do Sul</option> 
+			<option value="RR" <?php if($usr->getEstado() == "RR"){echo "selected";}?>>Roraima</option> 
+			<option value="SC" <?php if($usr->getEstado() == "SC"){echo "selected";}?>>Santa Catarina</option> 
+			<option value="SE" <?php if($usr->getEstado() == "SE"){echo "selected";}?>>Sergipe</option> 
+			<option value="SP" <?php if($usr->getEstado() == "SP"){echo "selected";}?>>São Paulo</option> 
+			<option value="TO" <?php if($usr->getEstado() == "TO"){echo "selected";}?>>Tocantins</option>
+		</select>
+		<?php
+			if($usr->getCidade() == "Local Desconhecido"){
+				echo '<input type="text" class="inputAlterar block" name="cidade" id="cidade" placeholder="Cidade">';
+			}else{
+				echo '<input type="text" class="inputAlterar block" name="cidade" id="cidade" value="'.$usr->getCidade().'">';
+			}
+
+			if ($usr->getResumo() == "Nada conhecido sobre esse usuário"){
+				echo '<textarea class="textareaAlterar block"  placeholder="Fale mais sobre você" name="resumo" id="resumo" rows="10" cols="50"></textarea>';
+			}else{
+				echo '<textarea class="textareaAlterar block"  placeholder="resumo" name="resumo" id="resumo" rows="10" cols="50">'.$usr->getResumo().'</textarea>';
+			}
+		?>
+		
+	</div>
+
+	<div class="botao">
+		<input class="submit botaoAlteraPerfil" id="alteraPerfilexe" onclick="alterarperfil()" type="submit" value="Cadastrar">
+		<a href="<?php echo $_SESSION["pagina"]; ?>"><button class="submit botaoAlteraPerfil" id="cancelaAlteraPerfil">Cancelar</button><a href="<?php echo $_SESSION["pagina"]; ?>">
+		<input type="hidden" name="acao" value="alterar">
+		<input type="hidden" name="id" id="id" value="<?php echo $usr->getId()?>">
+
+	</div>
+
+	<script type="text/javascript">
+		function alterarperfil(){
+			id = document.getElementById("id");
+			nome = document.getElementById("nome");
+			ano = document.getElementById("ano");
+			cidade = document.getElementById("cidade");
+			sexo = document.getElementById("sexo");
+			resumo = document.getElementById("resumo");
+			estado = document.getElementById("estado");
+			mes = document.getElementById("mes");
+			dia = document.getElementById("dia");
+
+
+
+			if(dia.value == ""){
+				dia.value = 11;
+			}
+			if(mes.value == ""){
+				mes.value = 11;
+			}
+			if(ano.value == ""){
+				ano.value = 1111;
+			}
+			if ((mes.value > 12)||(mes.value<1)){
+				mostraErro('Insira um mês válido');
+			}else if((dia.value>31)||(dia.value<1)){
+				mostraErro('Insira um dia válido');
+			}else if((ano.value<1900)||(ano.value><?php echo date('Y');?>)) {
+				if (ano.value==1111){
+					alert(ano.value);
+					$.ajax({
+						url:"../controller/ControllerUsuario.php",
+						type:"POST",
+						data:{
+							acao:"alterar",
+							id:id.value,
+							nome: nome.value,
+							dt_nasc: ano.value+'-'+mes.value+'-'+dia.value,
+							localidade: cidade.value+ ' - ' + estado.value,
+							sexo: sexo.value,
+							resumo: resumo.value,
+						},
+					})
+					.done(function(result){
+						location.href = result;
+					});
+				}else{
+					mostraErro('Insira um ano válida');
+				}
+				
+			}else{
+				$.ajax({
+					url:"../controller/ControllerUsuario.php",
+					type:"POST",
+					data:{
+						acao:"alterar",
+						id:id.value,
+						nome: nome.value,
+						dt_nasc: ano.value+'-'+mes.value+'-'+dia.value,
+						localidade: cidade.value+ ' - ' + estado.value,
+						sexo: sexo.value,
+						resumo: resumo.value,
+					},
+				})
+				.done(function(result){
+					location.href = result;
+				});
+			}
+
+		}
+			
+	</script>
+</div>
+
+
+
+</div>
+
+<script>
+			$('document').ready(function(){
+				$(".calendario").datepicker();
+			})
+		</script>

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function destacar(){
+				var img = document.getElementsByTagName("img");
+				img[0].style.border = "dotted #000000 1px";
+				img[1].style.border = "dotted #000000 1px";
+				img[2].style.border = "dotted #000000 1px";
+				img[3].style.border = "dotted #000000 1px";
+			}	
+			function voltar(){
+				var img = document.getElementsByTagName("img");
+				img[0].style.border = "";
+				img[1].style.border = "";
+				img[2].style.border = "";
+				img[3].style.border = "";
+			}
+		</script>
+	</head>
+	<body>
+	<input type="button" value="Destacar" onclick="destacar();">
+	<input type="button" value="Voltar" onclick="voltar();">
+	</br><hr></br>
+	
+	<img src="imagens/carro1.png"></img>
+	<img src="imagens/carro2.png"></img>
+	<img src="imagens/carro3.png"></img>
+	<img src="imagens/carro4.png"></img>
+	
+	</body>
+</html>
+

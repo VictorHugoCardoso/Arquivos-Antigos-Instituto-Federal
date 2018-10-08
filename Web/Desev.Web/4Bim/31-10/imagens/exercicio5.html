@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Exercicio 5</title>
+		<script language="Javascript">
+		function exibir(){
+		var txt = document.getElementById("texto");
+		var element = document.getElementsByTagName(txt.value);
+			for(i=0;i<element.length;i++){
+				element[i].style.border="1px solid blue";
+			}
+		}
+		</script>
+	</head>
+
+	<body>
+		<input type ="text" id="texto"><br/>
+		<input type="button" value="clique" onclick = "exibir();">
+	</body>
+</html>

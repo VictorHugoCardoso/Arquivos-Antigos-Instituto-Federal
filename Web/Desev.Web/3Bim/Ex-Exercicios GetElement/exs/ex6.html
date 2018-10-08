@@ -1,0 +1,40 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title> EX 6 </title>
+		<script language="Javascript">
+			function destaca(){
+				var money = document.getElementById("money");
+				var option = document.getElementById("opcao");
+				var div = document.getElementById("emDestaque");
+				if (option.value == "dolar"){
+					var result = money.value * 2;
+					div.innerHTML = result+" Dolár(es)";
+				}
+				if (option.value == "peso"){
+					var result = money.value / 2;
+					div.innerHTML = result+" Peso(s)";
+				}
+				if (option.value == "euro"){
+					var result = money.value * 3;
+					div.innerHTML = result+" Euro(s)";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="money"/> Real(is) <br>
+		Moedas: <select id="opcao">
+		<option onclick="destaca()" value="dolar"> Dólar</option>
+		<option onclick="destaca()" value="peso"> Peso</option>
+		<option onclick="destaca()" value="euro"> Euro</option>
+		</select>
+		
+		<div id="emDestaque">
+		
+		
+		</div>
+	</body>
+
+</html>

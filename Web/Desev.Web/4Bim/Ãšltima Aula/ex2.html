@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Exercicio 2 - Lista 7</title>
+		
+		<style type="text/css">
+			td{
+				padding:5px;
+				font-weight:bold;
+				vertical-align:top;
+			}
+			
+			input{
+				vertical-align:top;
+			}
+			
+			table{
+				border:3px solid darkBlue;
+				width:250px;
+			}	
+				
+		</style>
+		
+		<script type="text/javascript">
+			function mudaOuNao(obj){
+				var tr = obj.parentNode;
+				
+				if(obj.checked == true){
+					tr.style.background = "tan";					
+				}else{
+					tr.style.background = "";
+				}
+			
+			}
+		</script>
+	</head>
+	
+	
+	<body>
+		<h1>Selecione seu Carro</h1>
+		<form>
+			<table>
+				<tr>
+					<td>Beetle</td>
+					<td><input type="checkbox" name="beetle" onclick="mudaOuNao(this);"/>
+					<img src="carro2.png"/></td>
+				</tr>
+				
+				<tr>
+					<td>Ferrari</td>
+					<td><input type="checkbox" name="ferrari" onclick="mudaOuNao(this);"/>
+					<img src="carro3.png"/></td>
+				</tr>
+				
+				<tr id="tres">
+					<td>Nissan</td>
+					<td><input type="checkbox" name="Nissan" onclick="mudaOuNao(this);"/>
+					<img src="carro4.png"/></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

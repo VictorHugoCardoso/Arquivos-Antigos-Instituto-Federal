@@ -1,0 +1,16 @@
+Encapsulamento 
+
+É a propriedade que um objeto tem de esconder ou proteger seus métodos e atributos, para que não possam ser modificados ou visualizados por outor objeto.
+
+Um objeto não deve ser capaz de eacessar ou alterar diretamente os atributos de outro objeto.
+
+A comunicação entre objetos é realizada através de mensagens.
+Uma Mensagem nada mais é do que a chamada a um método.
+
+
+
+(     PRIVATE     )
+
+
+
+

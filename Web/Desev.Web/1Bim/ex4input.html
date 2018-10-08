@@ -1,0 +1,73 @@
+﻿<htm>
+	<head>
+		<title>::IFPR::Formulario de Incrição</title>
+	</head>
+		<body>
+		<form> 
+		<table border="0" align="center" bgcolor="#C9FEBE" cellspacing="8" width="800" height="55">
+			<th valign="top">
+			<font size="4" align="center" ><b>FORMULÁRIO DE INSCRIÇÃO</b></font>
+			</th>
+				
+			<th align="right" valign="top">
+			<img src="ifpr.jpg">
+			</th>
+				
+			<table border="0" align="center" bgcolor="#C9FEBE" cellspacing="0" cellpadding="0" width="800" height="100">
+				<td>
+						<table border="1" align="center" bordercolor="black" bgcolor="#C9FEBE" cellspacing="0" cellpadding="10" width="780" height="380">
+						<tr>
+						<td>Nome :<input type="text" name="nome"  size="39"/></td> <td>RG:<input type="text" name="rg"  maxlength="9" size="35"/> </td><br>  
+						</tr>
+						<tr>
+						<td>CPF: <input type="text" name="cpf" maxlength="11" size="35" /> </td> <td>Nome do Pai: <input type="text" name="nome_pai" size="39"/> </td> <br>
+						</tr>
+						<tr>
+						<td>Nome da Mãe: <input type="text" name="nome_mae" size="34"/></td> 
+						<td> Escolaridade:<select name="nacionalidade">
+							<option value="fundamental"> Ensino Fundamental</option>
+							<option value="medio"> Ensino Medio</option>
+							<option value="superior"> Superior Completo</option>
+							<option value="tecnico">  Ensino Tecnico</option>
+							</select> </td>
+						</tr>
+		
+						<tr>
+						<td> Curso: <select multiple names="curso">
+										<option value="fundamental"> Ensino Fundamental </option>
+										<option value="medio"> Ensino Medio </option>
+										<option value="superior"> Superior Completo </option>
+										<option value="pos"> Pós Graduação </option>
+										</select> </td>
+
+						<td> Gostaria de solicitar bolsas de estudo: <br>
+						<input type="checkbox" name="cientifica" value="cientifica" />Iniciação cientifica <br>
+						<input type="checkbox" name="monitoria" value="monitoria" /> Monitoria <br>
+						<input type="checkbox" name="estagio" value="estagio" />Estágio<br>
+						</td>
+						</tr>
+						<tr>
+							<td>
+							Email: :<input type="text" name="email" size="25"/> @ifpr.edu.br
+							</td>
+							<td>
+							Senha: :<input type="text" name="senha" size="25"/>
+							</td>
+							</tr>
+
+						<tr>
+						<td> Escolha o turno do curso: <br>
+						<input type="radio" name="turno" value="diurno">Diurno
+						<input type="radio" name="turno" value="vespertino">Vespertino
+						<input type="radio" name="turno" value="noturno">Noturno
+						</td>
+						<td> <input type="submit" value="Enviar"/> </td>
+						</tr>
+					</td>
+			</table>
+		</table>
+		</form>	
+	</body>
+	
+</html>
+	

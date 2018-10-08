@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function destacar(id){
+				var img = document.getElementById(id);
+				id.style.border = "dotted red 1px";
+			}	
+			function limpar(id){
+				var img = document.getElementById(id);
+				id.style.border = "";
+			}
+			function select(nome){
+				var tag = document.getElementById("img0");
+
+				tag.src = "imagens/" + nome + ".png"
+			}
+
+		</script>
+		<style>
+			body{
+				background: #CCC;
+			}
+			div{
+				border: solid 1px black;
+			}
+		</style>
+	</head>
+	<body>
+
+		<table cellspacing="40" align="center">
+			<tr>
+				<td><img id="carro1" src="imagens/carro1.png" ondblclick="select('carro1');" onmouseover="destacar(this);" onmouseout="limpar(this);"></img></td>
+				<td width="700" rowspan="4" width="1000">
+					<div align="center">
+						<h1>Selecionado</h1>
+						<img id="img0" src="imagens/branco.png"></img></br>
+						<input type="button" value="confirmar">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><img id="carro2" src="imagens/carro2.png" ondblclick="select('carro2');" onmouseover="destacar(this);" onmouseout="limpar(this);"></img></td>
+			</tr>
+			<tr>
+				<td><img id="carro3" src="imagens/carro3.png" ondblclick="select('carro3');" onmouseover="destacar(this);" onmouseout="limpar(this);"></img></td>
+			</tr>
+			<tr>
+				<td><img id="carro4" src="imagens/carro4.png" ondblclick="select('carro4');" onmouseover="destacar(this);" onmouseout="limpar(this);"></img></td>
+			</tr>
+
+
+		</table>	
+	</body>
+</html>
+

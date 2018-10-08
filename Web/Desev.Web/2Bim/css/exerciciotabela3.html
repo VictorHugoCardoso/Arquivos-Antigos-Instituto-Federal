@@ -1,0 +1,67 @@
+<head>
+		<title>Exercicio3 CSS table</title>
+		<style type="text/css">
+		caption{
+			font-style: italic;
+			font-family: verdana;
+			margin-top: 10px;
+		}
+		table{
+			caption-side: bottom;
+			margin-left: 10px;
+			border-spacing: 5px;
+			border-collapse: collapse;
+			border: 3px solid black;
+		}
+		td{
+			border: 2px;
+			padding: 3px;
+			border: 1px dotted black;
+		}
+		th{
+			border: 1px dotted black;
+			background: darkorange;
+		}
+		tr.odd{
+			background: tan;
+		}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<caption>Estatísticas dos municípios paranaenses</caption>
+			<tr>
+				<th>Cidade</th>
+				<th>População</th>
+				<th>Altitude</th>
+				<th>Temperatura</th>
+			</tr>
+			<tr>
+				<td>Foz do Iguaçu</td>
+				<td>260.000</td>
+				<td>200m</td>
+				<td>35&deg; C</td>
+			</tr>
+			<tr class="odd">
+				<td>Londrina</td>
+				<td>580.000</td>
+				<td>550m</td>
+				<td>30&deg; C</td>
+			</tr>
+			<tr>
+				<td>Cascavel</td>
+				<td>340.000</td>
+				<td>290m</td>
+				<td>25&deg; C</td>
+			</tr>
+			<tr class="odd">
+				<td>Curitiba</td>
+				<td>1340.000</td>
+				<td>890m</td>
+				<td>15&deg; C</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

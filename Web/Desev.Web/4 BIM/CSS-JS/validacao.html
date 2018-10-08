@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Validacao</title>
+		<script type="text/javascript">
+		function valida(form){
+			//obter o nome do formulario
+			var nome = form.nome.value;			
+			if(nome == ""){
+				alert('Preencha o nome');
+				return false;
+			}else{
+				alert("Formulario enviado com sucesso!");
+				return true;
+			}
+		}
+			
+		</script>
+	
+	</head>
+	<body>
+	<h2>Digite seus dados</h2>
+	<form onsubmit='return valida(this);'>
+		Nome: <input type='text' id='nome' name='nome'/>
+		</br>
+		<input type="submit" value="enviar"/>
+
+	</form>
+	
+	</body>
+</html>

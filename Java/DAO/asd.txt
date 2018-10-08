@@ -1,0 +1,12 @@
+	view
+pedir dados
+
+	controller
+Criar Objeto
+Atribuir Dados
+Chamar metodo Inserir do Dao Passando o objeto como parametro
+
+
+	DAO
+montar o sql usando os dados do objeto recebido
+executar o sql no bd

@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script type="text/javascript">	
+			var c = 2;
+			function addInput(){
+				var span = document.createElement('span');
+				span.innerHTML = 'Nome ' + c;
+				var input = document.createElement('input');
+				span.appendChild(input);
+				var div = document.getElementById('conteudo');
+				div.appendChild(span);
+				var br = document.createElement('br');
+				div.appendChild(br);
+				c++;
+				
+			}
+		</script>	
+	</head>
+	
+	<body>
+	<h1>Cadastro de Integrantes:</h1>
+	<form>
+		<input type="submit"></br>
+			<div id="conteudo" style="border: 1px solid blue; width: 250px; padding:10px;">
+				<input onclick="addInput()" type="button" value="+"></input></br>
+				Nome 1<input type="text" name="nome"></input></br>				 
+			</div>	
+	</form>
+	</body>
+	
+</html>

@@ -1,0 +1,5 @@
+<div class="msgtelinha">
+	<div class="enviodestinomsg"><?php echo $msg->getUsuarioenvio()->getUsername()?> -> <?php echo $msg->getUsuariodestino()->getUsername()?></div>
+	<pre class="textomsg"><?php echo $msg->getTexto(); ?></pre>
+	<div class="datamsg"><?php echo $msg->getDataenvio() ?></div>
+</div>

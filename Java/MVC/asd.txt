@@ -1,0 +1,20 @@
+MAPEAMENTO OBJETO-RELACIONAL
+
+--> Mapeamento entre os objetos e as tabelas do banco de dados
+
+Design Pattern DAO 
+
+Possui 2 tipos de classe
+
+-VO (valve object)
+	Sao classes que possuem como atributos as informações referentes aos campos das tabelas
+	Possuem gets/sets para cada atributo
+
+-DAO(possui o código sql)
+	E faz o mapeamento-Reçacional
+
+
+Data Acess Objetcs --> Se propoe a resolver o problema de persistencia de dados realizando o mapeamento do objeto-relacional
+
+
+

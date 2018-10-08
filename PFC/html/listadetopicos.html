@@ -1,0 +1,56 @@
+<!--Transforma os dados da tabela topico do banco de dados em informacao texto/grafica, incluido no ControllerTopico/consultar-->
+<div class="caixatop">
+	<div class="iconetopico left">	
+		<img src="../imagens/toppadrao.png" width="33">
+	</div>
+	<div class="tittop left">
+		<span class="titulo block"><a href="../telas/telaPost.php?id=<?php echo $topico->getId(); ?>&acao=listarposts&pag=1"><?php echo strip_tags($topico->getTitulo());?></a>
+			<?php
+				if ($_SESSION["logado"]==1){
+
+			  		if (($_SESSION["tipousr"] == 2)||($_SESSION["id"] == $topico->getUsuario()->getId() )){
+						echo "<a href = '../telas/alteraTopico.php?id=".$topico->getId()."&acao=alterar&titulo=".$topico->getTitulo()."' class='nomargin'><img title='Alterar' src='../imagens/alterar.png' width = '15'></a>" ;
+						echo "<a href = '../controller/ControllerTopico.php?id=".$topico->getId()."&acao=excluir' class='nomargin'><img  title='Excluir' src='../imagens/excluir.png' width = '15'></a>" ;
+			 		}
+			 	}
+			 ?>
+		</span>
+		<span class="descricao block"><?php
+
+		 $t = $topico->getPost()->getTexto();
+		 
+		if(($code = strpos($t, "(code)"))> -1){
+			if(($code2 = strpos($t, "(/code)"))>-1){
+				$t = str_replace( substr($t, $code,$code2 - $code), "", $t);			
+			}
+			
+		}
+		 $t = wordwrap($t, 70, "..." ,true);
+		 $t = substr($t, 0,73);
+		 echo $t;
+
+		 ?>
+		 </span>
+		 </span>
+	</div>
+	<div class="numpost left">
+		<span class="block"><?php echo $topico->getQtdPosts()-1;?> Respostas</span>
+		<span class="block"><?php echo $topico->getVisualizacoes(); ?> Vizualizações</span>
+	</div>
+	<div class="criadortop left">
+		<img src="<?php if(!$topico->getAnonimo() == 1){ echo $topico->getUsuario()->getUrlFoto(); }else{ echo '../imagens/anonimo.jpg'; } ?>" class="icon30usr left">
+		<span class="block ">
+		<?php
+			if($topico->getAnonimo() == 1){
+				echo "<u>Não Identificado</u>";
+		 	}else{
+		 		echo "<a href='../telas/telaPerfil.php?acao=consultaPerfil&id= ".  $topico->getUsuario()->getId() . "'>";
+		 		echo $topico->getUsuario()->getUsername(); 
+		 		echo "</a>";
+		 	}
+		?>
+		</span>
+		<span class="block "><?php echo $topico->getDt_criacao();?></span>
+	</div>
+</div>
+	

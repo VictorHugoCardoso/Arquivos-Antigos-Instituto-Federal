@@ -1,0 +1,32 @@
+<!--Barra de navegacao do site, incluida em todas as paginas do site-->
+<nav class="menu">
+	<ul align="center">
+		<a href="index.php"><li class="itemMenu">Inicio</li></a>
+		<?php
+			if (isset($_SESSION["logado"])){
+				if ($_SESSION["logado"] == 1){
+					
+				}else{
+					echo '<a href="cadastroUsuario.php"><li class="itemMenu">Cadastrar</li></a>';
+				}
+			}
+		?>
+		<a href="../telas/telaConsulta.php"><li  class="itemMenu">Pesquisar</li></a>
+	
+		<a href="../telas/telaFAQ.php?acao=listar"><li  class="itemMenu">FAQ</li></a>
+		<?php
+			if (isset($_SESSION["logado"])){
+				echo "
+				<script>
+					consultaNumMensagem();
+					setInterval(function(){ 
+						consultaNumMensagem();
+					}, 15000);
+				</script>";
+				if ($_SESSION["logado"] == 1){
+					echo '<a href="../telas/telaMensagem.php?acao=listarRecebidas"><li class="itemMenu">Mensagens<span id="numMsg" style="color: lightgreen; font-size: 14px;"></span></li></a>';
+				}
+			}
+		?>
+	</ul>
+</nav>

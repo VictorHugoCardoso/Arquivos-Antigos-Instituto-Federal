@@ -1,0 +1,20 @@
+
+<div class="box80">
+	<div class="titulo reduzir">
+		<span class="titulotexto">Cadastrar Tópico</span>
+	</div>
+	<form action="../controller/ControllerTopico.php" method="POST">
+		<div class="inlineblock divCadastroUsuario">
+			<input class="inputCadastro block" placeholder="Titulo" id="titulo" type="text" name="titulo" required>
+			<textarea class="textareaCadastro block" placeholder="Descricao" id="post" name="texto" rows="10" cols="50" required></textarea>
+			<br>
+			<div class="botao">
+			<input style="margin-left: 30px" type="checkbox" class="checkCadastro" name="anonimo" value="0" />Enviar como anônimo
+				<input class="submit" type="submit" value="Cadastrar">
+				<a href="<?php echo $_SESSION["pagina"]; ?>"><input class="submit cancelar" type="button" value="Cancelar"></a>
+				<input type="hidden" name="idassunto" value="<?php echo $_GET["idassunto"]; ?> ">
+				<input type="hidden" name="acao" value="cadastrar">
+			</div>
+		</div>
+	</form>
+</div>

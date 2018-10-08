@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		body{
+			background:#CCC;
+		}
+		div.asd{
+			border: 2px solid blue;
+			width: 800px;
+			padding: 15px;
+		}
+	</style>
+	<script>
+		var a = 1;
+		function novaTag(){
+			a = a + 1;
+			var div = document.createElement('div'); 
+			div.innerHTML = "Nome "+a+":<br><input><br><br>";
+			var divTitulo = document.getElementById('asd');
+			divTitulo.appendChild(div);
+		}
+	</script>
+</head>
+<body>
+	<h1>Cadastro De Integrantes:</h1>
+	<br><button>Enviar</button><br><br><br>
+	<div id="asd" class="asd">
+		<button onclick="novaTag()">+</button><br>
+		Nome 1:<br>
+		<input><br><br>
+	</div>
+</body>
+</html>

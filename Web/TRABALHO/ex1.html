@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> EX1 </title>
+		<script>
+			function calc(){
+				var val1 = document.getElementById("val1");
+				var val2 = document.getElementById("val2");
+				var inp = document.getElementById("emDestaque");
+				var op = document.getElementById("opcao");
+				
+				if (op.value == 1){
+					var result = parseFloat(val1.value) + parseFloat(val2.value);
+					inp.value = result;
+				}
+				if (op.value == 2){
+					var result = val1.value - val2.value;
+					inp.value = result;
+				}
+				if (op.value == 3){
+					var result = val1.value / val2.value;
+					inp.value = result;
+				}
+				if (op.value == 4){
+					var result = val1.value * val2.value;
+					inp.value = result;
+				}
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<div id="site">
+		<table>
+			<tr>
+				<td align="center">Valor 1: </td>
+				<td>OP: </td>
+				<td align="center">Valor 2: </td>
+				<td></td>
+				<td align="center">Resultado: </td>
+			</tr>
+			<tr>
+				<td><input size="15" type="text" id="val1"/></td>
+				<td>
+					<select id="opcao">
+					<option value="1">+</option>
+					<option value="2">-</option>
+					<option value="3">/</option>
+					<option value="4">*</option>
+					</select>
+				</td>
+				<td><input size="15" type="text" id="val2"/></td>
+				<td><button onclick="calc()">=</button></td>
+				<td align="center"><input size="2" id="emDestaque" type="text"/></td>
+			</tr>
+		</table>	
+		</div>
+	</body>
+
+</html>

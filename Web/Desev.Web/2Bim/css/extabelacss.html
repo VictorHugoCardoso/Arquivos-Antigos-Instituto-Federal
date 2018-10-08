@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Exemplo CSS table</title>
+		<style type="text/css">
+		caption{
+			text-decoration: underline;
+			font-family: verdana;
+			color: maroon;
+			margin-top: 10px;
+		}
+		table{
+			/*colocar a legenda em baixo*/
+			caption-side: bottom;
+			margin-left: 20px;
+			border: 3px solid navy;
+			border-spacing: 10px;
+			border-collapse: collapse;
+		}
+		td{
+			border: 1px solid red;
+			padding: 5px;
+		}
+		tr{
+			background: #EEE;
+		}
+		tr.odd{
+			background: #CCC;
+		}
+		tr:hover{
+			background: blue;
+			color: white;
+		}
+		th{
+			background: yellow;
+		}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<caption>Estatísticas dos municípios paranaenses</caption>
+			<tr>
+				<th>Cidade</th>
+				<th>População</th>
+				<th>Altitude</th>
+				<th>Temperatura</th>
+			</tr>
+			<tr>
+				<td>Foz do Iguaçu</td>
+				<td>260.000</td>
+				<td>200m</td>
+				<td>35&deg; C</td>
+			</tr>
+			<tr>
+				<td>Londrina</td>
+				<td>580.000</td>
+				<td>550m</td>
+				<td>30&deg; C</td>
+			</tr>
+			<tr>
+				<td>Cascavel</td>
+				<td>340.000</td>
+				<td>290m</td>
+				<td>25&deg; C</td>
+			</tr>
+			<tr>
+				<td>Curitiba</td>
+				<td>1340.000</td>
+				<td>890m</td>
+				<td>15&deg; C</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

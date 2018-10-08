@@ -1,0 +1,1609 @@
+*[class*=seta-] {
+	width: 0;
+	height: 0;
+}
+.seta-cima {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #aaa;
+}
+.seta-direita {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #aaa;
+}
+.seta-baixo {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #aaa;
+}
+.seta-esquerda {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right:10px solid #aaa;
+}
+
+/**========================================= Formularios =================================**/
+ 
+
+.tituloadmin{
+	text-align: center;
+}
+
+.inputsadmin{
+	margin:auto;
+	width:220px;
+}
+
+#consultatodos
+
+.divadmin{
+	width:477.5px;
+	height:140px;
+	margin:10px 0px 0px 15px;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.2), rgba(175, 228, 147, 0.2), rgba(60, 173, 0, 0.2));
+	float:left;
+	border-radius: 3px;
+	border:1.5px solid green;
+	box-shadow: 0px 0px 4px 1px black;
+}
+
+.b1{
+	box-shadow: 1px 1px 3px 1px black;
+}
+
+.b2{
+	box-shadow: -1px 1px 3px 1px black;
+}
+
+.b3{
+	box-shadow: 1px -1px 3px 1px black;
+}
+
+.b4{
+	box-shadow: -1px -1px 3px 1px black;
+}
+.voltar{
+	float:left;
+	margin: -3px 0px 0px 13px;
+	width:20px;
+	height:20px;
+	z-index: 2;
+}
+
+#icone{
+	display:none;
+}
+
+.imgtop{
+	margin:5px auto;
+}
+
+#divmsginv{
+	z-index:2021;
+	margin: 90px auto;
+	width:460px;
+	padding:20px;
+	height:500px;
+	background-color: white;
+	border-radius: 7px;
+}
+
+.painelAdm{
+	background:linear-gradient(to right, rgba(60, 173, 0, 0.2), rgba(175, 228, 147, 0.2), rgba(60, 173, 0, 0.2));
+	height:365px;
+}
+
+.overflow{
+	overflow: auto;
+	height: 480px;
+}
+
+.enviodestinomsg{
+	font-size: 13px;
+	text-align: left;
+}
+
+.titulomsg{
+	width: 100%;
+	border-bottom: 2px solid #ccc;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 5px 0px;
+}
+
+.datamsg{
+	text-align: right;
+	font-size: 12px;
+}
+
+.msgtelinha{
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 5px 0px;
+	text-align: left;
+}
+
+#cinzatransp{
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed!important;
+	z-index: 200;
+	top:0px;
+	left:0px;
+}
+
+.resultado{
+	margin: 20px 0px 0px 0px;
+}
+.caixapesq{
+	background:transparent;
+	border-top: 1px solid #8A8;
+	height:50px;
+}
+.caixapesq:hover{
+	background: #3CAD00;
+}
+
+.imgpesq{
+	margin: 5px 10px 1px 5px;
+	float:left;
+}
+
+.dadospesq{
+	float: left;
+	padding:7.5px 0px;
+	width:250px;
+}
+
+.nomepesq{
+	float: left;
+	padding:7.5px 0px;
+	width:640px;
+}
+
+.nomepesqusr{
+	float: left;
+	padding:7.5px 0px;
+	width:500px;
+}
+.nomepesqusrpost{
+	float: left;
+	padding:7.5px 0px;
+	width:500px;
+}
+
+.n1pesq{
+	display: block;
+}
+
+.n2pesq{
+	display: block;
+}
+
+.divInputPesquisa{
+	padding-top: 10px;
+	margin:auto;
+	width:280px;
+
+}
+#inputPesquisa{
+	margin: 00px 0px 00px 10px;
+	float: left;
+}
+#setaPesquisa{
+	position: absolute;
+	margin-top: -10px;
+	margin-left: 10px;
+	border-bottom: 10px solid green;
+	background-color: linear-gradient(to right,#3CAD00, #7EBA00, #3CAD00);
+}
+.iconePesquisa{
+	width:30px;
+	height:30px;
+	display: block;
+	padding:3.5px 10px;
+}
+
+.divFiltro1{
+	margin:5px 20px 5px 5px;
+	float:left;
+
+}
+.divFiltro2{
+	margin:5px 20px 5px 5px;
+	float:left;
+}
+
+.divFiltro{
+	background: #E6FFDE;
+	border:1px solid green;
+	margin: 10px 0px 0px 15px;
+	position: absolute;
+	box-shadow:3px 3px 10px 0px black;
+}
+#diverro{
+	border:2.9px ridge red;
+	background:white;
+	width:50%;
+	text-align: center;
+	min-height:20px;
+	padding:7.5px;
+	position:fixed!important;
+	margin:0% 24%;
+	top:-30px;
+	z-index: 999;
+	color: red;
+	box-shadow: 10px 10px 30px 0px black;
+}
+.divCadastroUsuario{
+	width:1000px;
+	margin:auto;
+
+	padding:20px 0px 50px 0px;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.4), rgba(175, 228, 147, 0.4), rgba(60, 173, 0, 0.4));
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#confemail, #confuser{
+	margin:auto;
+	width:210px;
+}
+
+#carregando{ 
+	margin:0px 90px;
+}
+.labelCadastro{
+	padding:12.5px 0px 12.5px 0px;
+}
+
+.cempc{
+	width:200px;
+}
+.inputAlterar{
+	margin:5px;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	width: 200px;
+	font-family: cursive;
+}
+
+.inputAlterarDia{
+	margin:0px 0px 5px 5px;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	font-family: cursive;
+	float:left;
+}
+
+.inputAlterarMes{
+	margin:0px 5px 5px 5px;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	font-family: cursive;
+	float: left;
+}
+
+.inputAlterarAno{
+	margin:5px 0px 5px 5px;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	font-family: cursive;
+
+}
+
+.textareaAlterar{
+	margin:0px 0px 0px 5px;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	width: 500px;
+	height:150px;
+	font-family: courier;
+	text-align: left;
+}
+
+.inputCadastro{
+	margin:5px auto;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	width: 200px;
+	font-family: cursive;
+}
+
+.inputCadastro:focus{
+	box-shadow:0px 0px 5px 2px #33CC33;
+	border: 2px solid #33CC33;
+}
+
+.textareaCadastro{
+	margin:5px auto 15px auto;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	width: 500px;
+	font-family: courier;
+	text-align: left top;
+}
+
+.textareaCadastro:focus{
+	box-shadow:0px 0px 10px 1px #33CC33;
+	border: 2px solid #33CC33;
+}
+
+.isstring1{
+	color: #FF6347;
+}
+
+.isstring2{
+	color: #9B30FF;
+}
+
+.textareaFaq{
+	margin:5px auto 15px auto;
+	border-radius: 3px;
+ 	outline: none;
+	padding: 7px;
+	border: 2px solid grey;
+	width: 400px;
+	font-family: courier;
+	text-align: left top;
+}
+
+.divfaq{
+	width:500px;
+	text-align: center;
+}
+
+.checkCadastro{
+	display: inline-block;
+}
+
+label.fontspan{
+	height:24px;
+}
+.perguntafaq{
+	font-weight: bold;
+	margin:5px 0px 0px 0px;
+	width:980px;
+	white-space: pre-wrap;
+}
+
+.respostafaq{
+	margin:0px 0px 0px 0px;
+	width:980px;
+	display: block;
+	white-space: pre-wrap;
+	word-wrap:break-word;
+
+}
+
+.href{
+	width:1000px;
+}
+
+
+/**========================================= Loginbar =================================**/
+#loginbar{
+	top:0px; 
+	width:100% - 10px;
+	height:30px;
+	left:0px; 
+	right:0px;
+	background-color:#004520;
+	padding-top:5px;
+	padding-bottom: 3px;
+	padding-left:10px;
+	color:white;
+	font-size:15px;
+}
+#iconlink{
+	font-size:20px;
+	font-weight: bold;
+	text-shadow: 3px 3px 4px black;
+}
+.loginbar.right{
+	margin-right: 5px;
+}
+
+.imgLoginbar{
+	border-radius:5px;
+	margin-top: 3px;
+	width:22px;
+	height:22px;
+	background: green;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.expand{
+	padding:4px 5px 5px 4px;
+	margin-left: 0px;
+	margin-top: 2px;
+	border-radius: 5px;
+	border:1px solid #004520;
+	margin-right: 18px;
+}
+
+img.expand:hover{
+	background: radial-gradient(#004520 60%, #AFE493  );
+	border:1px solid black;
+}
+
+#dropusr{
+	position: absolute;
+	top:45px;
+	right:10px;
+	padding:0px 0px 0px 0px;
+	border:2px solid green;
+	background-color:#F5FFF5;
+	color: black;
+	box-shadow:5px 5px 10px 0px black;
+}
+
+.divisor{
+	width:90%;
+	margin: auto;
+	border-bottom: 1px solid black;
+}
+
+.option:hover{
+	background-color:#AFE493;
+	border:1px solid black;
+	border-right: 0px solid white;
+	border-left: 0px solid white;
+	border-top:1px solid green; 
+	border-bottom:1px solid green;
+	box-shadow: 3px 3px 10px 0px grey;
+}
+
+.option{
+	padding:2px 10px 2px 13px;
+	margin: 5px 0px;
+	border:1px solid white;
+	border-right: 0px solid white;
+	border-left: 0px solid white;
+}
+#setausr{
+	margin-top: 31px;
+	right:21px;
+	position: absolute;
+	z-index: 100;
+	border-bottom: 10px solid green;
+}
+
+.usrnameLoginbar{
+	margin-top: 6px;
+	margin-right:10px;
+}
+
+/**========================================= Notificacao ================================**/
+#divNotificacaoUnica{
+	background: green;
+	color: white;
+	width: 220px;
+	height: 16px;
+	font-size: 15px;
+	position: absolute;
+	padding: 5px;
+	border-radius: 7px 7px 0px 0px;
+	margin-top: 13px;
+	z-index: 9000;
+	box-shadow: 3px 0px 5px 0px black;
+}
+
+#notificacao{
+	display: inline-block;
+	margin-right: -4px;
+}
+
+#fotonoti{
+	height:31px; 
+	width: 55px;
+}
+
+#spanred{
+	background: white;
+	color:red;
+	border: 1px solid red;
+	border-radius: 6px;
+	width: 12px;
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	padding: 1px 2px 1px 2px;
+	margin:15px 0px 0px -25px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#triangle{
+	float: right;
+	margin-right: -191px;
+	width: 0;
+	height: 0;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 13px solid green;
+}
+
+#janelaNotific {
+	position: absolute;
+	background-color: green;
+	border-radius: 0px 0px 3px 3px;
+	width: 230px;
+	margin-top: 38px;
+	margin-right: -130px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	box-shadow: 3px 3px 5px 0px black;
+	z-index: 60;
+	overflow: auto; 
+}
+.cadaNotificacao{
+	padding: 3px;
+	border-radius: 7px;
+	border: 3px solid green;
+	background: #E6FFDE;
+	color: black;
+	font-size: 14px;
+
+}
+#englobaNotificacao{
+	float: right;
+	margin-right: 147px;
+}
+
+/**========================================= Formulario de login ================================**/
+#divformulariocadastro{
+	margin: 0px;
+	padding-bottom:8px;
+	width: auto;
+	background: #E0EEE0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 200px;
+}
+
+ input.formcadastro{
+ 	border-radius: 5px;
+ 	outline: none;
+	padding: 3px;
+	border: 2px solid grey;
+	width: 200px;
+	font-family: cursive;
+ }
+
+ input.formcadastro:focus{
+ 	border: 2px solid #7DBA00;
+	background: #E2EECC;
+ }
+
+.linkr{
+	margin-right: 10px;
+	margin-top: -20px;
+}
+ .fontspan{
+ 	text-align:center;
+	font-weight: bold;
+	color: #2C2C2C;
+	font-size: 15px;
+ }
+
+ .mr10{
+ 	margin-right: 10px;
+ }
+
+  .botaoLoginbar{
+ 	color: white;
+ 	background: #3CAD00; 
+ 	border-radius: 3px;
+ 	padding: 1px;
+ 	outline: none;
+	border: 2px solid green;
+	width: 103px;
+	font-family: cursive;
+ }
+
+ .botaoLoginbar:hover{
+ 	box-shadow:0px 0px 20px 2px white;	
+ 	background: white;
+	color:#009933;
+	box-shadow:0px 0px 10px 3px gray;
+	border: 2px solid #009933;
+	transition-duration: 0.5s;
+ }
+
+ .submitAdmin{
+ 	color: white;
+ 	margin: 7.5px 10px;
+ 	background: #3CAD00; 
+ 	text-align: center;
+ 	border-radius: 3px;
+ 	padding: 5px;
+ 	outline: none;
+	border: 2px solid green;
+	width: 980px;
+	font-family: cursive;
+	display: inline-block;
+ }
+
+ .submitAdmin:hover{
+ 	background: white;
+	color:#009933;
+	border: 2px solid #009933;
+	transition-duration: 0.5s;
+ }
+
+ .buttons{
+ 	width: 1000px;
+ 	margin:10px auto;
+ }
+
+ .submit{
+ 	color: white;
+ 	background: #3CAD00; 
+ 	border-radius: 3px;
+ 	padding: 5px;
+ 	outline: none;
+	border: 2px solid green;
+	width: 107px;
+	font-family: cursive;
+ }	
+
+.submit:hover{
+	background: white;
+	color:#009933;
+	border: 2px solid green;
+	transition-duration: 0.5s;
+}
+
+.submit2{
+	color: white;
+ 	background: #3CAD00; 
+ 	border-radius: 3px;
+ 	padding: 5px;
+ 	outline: none;
+	border: 2px solid green;
+	width: 210px;
+	font-family: cursive;
+}
+
+ .margininput{
+ 	margin-right: 250px;
+ }
+ .botao{
+ 	margin: auto;
+ 	height:50px;
+ 	width:219px;
+ }
+
+ .huehue{
+ 	margin: auto;
+ 	height:50px;
+ 	width:322px;
+ }
+/**========================================= Fade de login ================================**/
+#invisivel{
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: fixed!important;
+	z-index: 200;
+}
+
+.divtelafade{
+	display: block;
+	width: 250px;
+	background:white;
+	border-radius: 5px;
+	padding: 20px;
+	border: 3px solid #7DBA00;
+	box-shadow: 5px 5px 5px black;
+	margin:225px auto;
+
+}
+.logologin{
+	margin:auto;
+	margin-left: 93.5px;
+	width:63px;
+	height:86px;
+}
+.inflogin{
+	outline:none;
+	border: 1px solid grey;
+	padding: 4px;
+	width: 237px;
+	margin: auto;
+	font-family: "times";
+}
+.showinflogin{
+	font-size: 14px;
+	margin-top: 10px;
+	display:block;
+}
+.enviarlogin{
+	margin-left:30%;
+}
+.lembrar{
+	font-size: 13px;
+	margin-top: 8px;
+}
+
+.g{
+	font-size: 19px;
+}
+ .botao1loginfade{
+ 	color: white;
+ 	background: #3CAD00; 
+ 	border-radius: 3px;
+ 	padding: 1px;
+	border: 2px solid green;
+	width: 103px;
+	font-family: cursive;
+	margin-left: 18px;
+ }
+  .botao2loginfade{
+ 	color: white;
+ 	background: #3CAD00; 
+ 	border-radius: 3px;
+ 	padding: 1px;
+	border: 2px solid green;
+	width: 103px;
+	font-family: cursive;
+ }
+  .botao1loginfade:hover{
+ 	background: white;
+	color:#009933;
+	box-shadow:0px 0px 10px 3px #CCC;
+	border: 2px solid green;
+	transition-duration: 0.5s;
+ }
+  .botao2loginfade:hover{
+ 	background: white;
+	color:#009933;
+	box-shadow:0px 0px 10px 3px #CCC;
+	border: 2px solid green;
+	transition-duration: 0.5s;
+ }
+
+ .esqueceuSenha{
+ 	font-size: 10px;
+ 
+ }
+
+/**========================================= classes gerais ================================**/
+.absolute{
+	position:absolute;
+}
+
+.clicktoenter2{
+	width: 306px;
+}
+
+.submitbug{
+	float:right;
+	margin-left: -144px;
+	margin-top: 4px;
+	z-index:50;
+	position: absolute;
+	background: #006600;
+	border: 2px solid white;
+	width: 123px;
+}
+
+.submitbug:hover{
+	background: white;
+	color:#009933;
+	border: 2px solid #009933;
+	transition-duration: 0.5s;
+}
+
+.icone{
+	position: absolute;
+	margin-top: -6px;
+	z-index: 50;
+	right:23px;
+	background: #006600;
+	border: 2px solid white;
+}
+
+.botaofaq{
+	float:right;
+	margin-left: -130px;
+	margin-top: 4px;
+	z-index:50;
+	position: absolute;
+	background: #006600;
+	border: 2px solid white;
+}
+
+.icone:hover{
+	background: white;
+	color:#009933;
+	border: 2px solid green;
+	transition-duration: 0.5s;
+}
+
+.botaoAlteraPerfil:hover{
+	background: white;
+	color:#009933;
+	border: 2px solid green;
+	transition-duration: 0.5s;
+}
+
+.botaoAlteraPerfil{
+	margin-top: 6px;
+}
+
+.botaofaq:hover{
+	background: white;
+	color:#009933;
+	border: 2px solid #009933;
+	transition-duration: 0.5s;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.block{
+	display:block;
+}
+.inline{
+	display: inline;
+}
+.inlineblock{
+	display: inline-block;
+}
+.left{
+	float:left;
+	min-width:0px;
+
+}
+
+.pequena{
+	margin-top:5px;
+}
+
+.right{
+	float:right;
+	min-width:0px;
+}
+
+.nomargin{
+	margin: 0px 7px 0px 1px;
+}
+
+body{
+	min-width:1000px;
+	margin:0px;
+	background: url('../imagens/back.jpg') no-repeat fixed;
+	background-size: cover;
+	height: 100%;
+}
+
+html{
+	height:100%;
+	font-family: times;
+	font-size: 16px;
+}
+
+div{
+	padding:0px;
+	margin:0px;
+}
+
+table{
+	width:100%;
+}
+
+.textblack{
+	color:black;         
+	font-size:15px;
+}
+
+.aligncenter{
+	text-align:center;
+}
+
+.alignleft{
+	text-align:left;
+}
+
+.alignright{
+	text-align:right;
+}
+
+.linkdiscreto{
+	font-size:12px;
+}
+
+/**============================================ Logo do Site ====================================**/
+
+#logo{
+	width:100%;
+	height:155px;
+	left:0px; 
+	margin:0;
+	background:url(../imagens/ifpr.png) no-repeat center;
+	min-width:1000px;
+}
+
+
+/**================================================ Links ========================================**/
+
+a:link{text-decoration:none; color: blue;}
+a:visited{text-decoration:none; color: blue;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+/**================================================== Menu =======================================**/
+.itemMenu{
+	list-style:none;
+	display: inline-block;
+	width:90px;
+	text-align:center;
+	padding:7px 19px 3px 20px;
+	height:18px;
+	color:white
+	
+}
+
+nav.menu ul li:hover{
+	background:#7DBA00;
+	border-bottom: 3px solid white;
+	transition-duration: 0.25s;
+}
+
+nav.menu ul{
+	padding:0px;
+	width:1000px;
+	margin:0 auto 0 auto;
+	
+}
+
+nav.menu{
+	padding:auto;
+	width:1000px;
+	height:30px;
+	margin:10px auto auto auto;
+	border:1px solid #101010;
+	display:block;
+	background-color:#004520;
+	border-radius:5px;
+}
+
+/**============================================== Menu mensagem ====================================**/
+.itemMenu2{
+	list-style:none;
+	display: inline-block;
+	width:135px;
+	text-align:center;
+	padding:7px 19px 3px 20px;
+	height:18px;
+	color:white
+	
+}
+.menumensagem ul li:hover{
+	background:#1E5500;
+	border-bottom: 3px solid white;
+	transition-duration: 0.5s;
+}
+
+.menumensagem ul{
+	padding:0px;
+	width:1000px;
+	margin:0 auto 0 auto;
+	
+}
+
+.menumensagem{
+	padding:auto;
+	width:1000px;
+	height:30px;
+	margin:0px;
+	border:1px solid #101010;
+	border-top:0px;
+	border-left: 0px;
+	display:block;
+	background: linear-gradient(to right,#3CAD00, #7EBA00, #3CAD00);
+
+}
+/**============================================== Tela inicial ====================================**/
+.box80{
+	width:1000px;
+	margin:10px auto 45px auto;
+	overflow: hidden;
+	min-height:63%;
+}
+
+.fundoassunto{
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.4), rgba(175, 228, 147, 0.4), rgba(60, 173, 0, 0.4));
+	padding: 5px 0px 20px 0px;
+	margin-bottom: 10px;
+	
+}
+
+
+div.titulo{
+	background:linear-gradient(to right,#3CAD00, #7EBA00, #3CAD00);	
+	width:1000px;
+	padding:0px 0px 0px 0px;
+	margin:auto;
+	height:40px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom:2px solid green;
+	text-align: center;
+}
+
+.caixaDeAssuntos{
+	margin:auto;
+	padding:20px;
+	width:auto;
+}
+
+tr.assunto{
+	height:auto;
+	
+}
+
+div.tabelaAssunto{
+	margin:15px 20px 0px 20px;
+	border: 1px solid #BBB;
+	border-radius: 5px;
+	background: linear-gradient(#AFE493 , #E0EEEE, #AFE493);
+	box-shadow: 5px 5px 10px gray;
+
+}
+.iconeassunto{
+	width:50px;
+	height:50px;
+	padding:5px;
+	margin:2.5px 0px 0px 2.5px;
+}
+
+.divImgAssunto, .divTxtAssunto, .divStatAssunto, .divLastAssunto{
+	min-width:0px;
+	margin:auto;
+	padding:0px;
+	vertical-align:middle;
+	min-height:60px;
+
+}
+
+.divImgAssunto{
+	width:50px;
+}
+
+.divTxtAssunto{
+	width:60%;
+	padding-left: 10px
+
+
+}
+
+.divStatAssunto{
+	width:17.5%;
+}
+
+.divLastAssunto{
+	width:17.5%;
+}
+
+span.titulotexto{
+	padding:10px 0px 0px 0px;
+	display:block;
+	color:white;
+	font-size: 20px;
+	width:auto;
+	margin:auto;
+	position:relative;
+	z-index: 1;
+}		
+
+span.titulopost{
+	padding:0px 0px 0px 0px;
+	display:block;
+	color:#102010;
+	font-size: 20px;
+	width:auto;
+	position:absolute;
+}
+
+#cadastroAssunto , #cadastroAdmin{
+    background: black;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 10px auto auto auto;
+    width:975px;
+    color: white;
+}
+
+/**==============================================Tela de Mensagem ====================================**/
+
+/** cadastro */
+#contemSelectMsg{
+	margin-left: 410px;
+}
+
+#selectUsuarioAssunto{
+	margin-left: 390px;
+}
+
+#s2id_selectUsuarioMensagem{
+	margin-left :390px;
+}
+
+#tituloMsg{
+	margin-left: 241px;
+	width: 205px;
+}
+
+.select2-container{
+	margin:10px auto auto auto;
+}
+
+/** consulta */
+.tituloListaMensagem{
+	min-width:0px;
+	width: 300px;
+	margin:auto;
+	padding:0px;
+	vertical-align:middle;
+	min-height:60px;
+}
+
+.infoListaMensagem{
+	min-width:0px;
+	margin:auto;
+	width: 407px;
+	padding:0px;
+	vertical-align:middle;
+	min-height:60px;
+}
+
+.resExListaMensagem{
+	min-width:0px;
+	margin:auto;
+	padding:0px;
+	vertical-align:middle;
+	min-height:60px;
+}
+
+.msgListaMensagem{
+	margin-left: 30px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+.separa{
+	width: 30px;
+}
+
+.tabelaMsg{
+	margin:15px 20px 20px 20px;
+	border: 1.2px dotted #DDDD08;
+	border-radius: 1px;
+	background: linear-gradient(#AFE493 , #E0EEEE, #AFE493);
+	box-shadow: 5px 5px 10px gray;
+}
+
+.caixaMsg{
+	padding:5px 10px;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.4), rgba(175, 228, 147, 0.4), rgba(60, 173, 0, 0.4));
+}
+
+.divbotoesMsg{
+	margin-left: 440px;
+}
+
+.submit3{
+ 	color: white;
+ 	background: #3CAD00; 
+ 	border-radius: 3px;
+ 	padding: 5px;
+ 	outline: none;
+	border: 2px solid green;
+	width: 127px;
+	font-family: cursive;
+ }
+
+ .submit3:hover{
+ 	background: white;
+	color:#009933;
+	border: 2px solid green;
+	transition-duration: 0.5s;
+ }
+/**==============================================Tela de Topico ====================================**/
+
+
+.tittop{
+	
+}
+
+.caixatop{
+	min-height:53px;
+	border-bottom:1px solid #8A8;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.4), rgba(175, 228, 147, 0.4), rgba(60, 173, 0, 0.4));
+}
+
+.caixafaq{
+	padding:5px 10px;
+	border-bottom:1px solid #8A8;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.4), rgba(175, 228, 147, 0.4), rgba(60, 173, 0, 0.4));
+}
+
+
+
+.iconetopico{
+	margin:8px 5px 0px 5px;
+	margin:13px 2px 0px 5px;
+}
+
+.tittop{
+	margin: 5px 5px 0px 5px;
+
+	width:550px;
+}
+
+span.titulo{
+	font-size:20px;
+}
+
+.numpost{
+	width:150px;
+	margin-right: 15px;
+	text-align: right;
+	margin-top:6px;
+}
+
+.icon30usr{
+	width:30px;
+	height:30px;
+	margin:2px 5px 0px 0px;
+}
+
+.criadortop{
+	font-size: 15px;
+	margin-top:8px;
+	width:225px;
+}
+
+
+/**==============================================Tela de Post ====================================**/
+
+.divpaginas{
+	max-width:1000px;
+	display: block;
+	height:30px;
+	margin: 10px auto 45px auto;
+	top:0px;
+}
+
+.divpagina{
+	width:3px;
+	height:10px;
+}
+
+.pagina{
+	margin-left: 10px;
+	border:1px solid white;
+	background-color: #1E5500;
+	color:white;
+	display:block;
+	height:25px;
+	width:25px;
+	padding:5px;
+	margin:auto;
+}
+
+.botaoadmin{
+	width:218px;
+}
+.caixausuario{
+	width:200px;
+	min-height:260px;
+	height:100%;
+}
+
+img.iconeusuariopost{
+	width:150px;
+	height:150px;
+	margin-top:10px;
+}
+
+.cinza{
+	color:#999;
+}
+
+.mgtop{
+	margin-top:10px;
+}
+
+.center{
+	text-align:center;
+}
+
+.avaliacao{
+	margin:auto;
+	text-align:center;
+}
+.titpost{
+	background-color: #49800E;
+
+	border-bottom:0px;
+	height:23px;
+	padding:10px 0px 10px 15px;
+	font-size:18px;
+	color:#102010;
+	min-height:;
+}
+
+.caixapost{
+	min-height: 280px;
+	width:778px;
+	padding-top:20px;
+}
+
+.boxtop{
+	border:1px solid #008B00;
+	border-top:0px solid #C1CDC1;
+	margin:0px 0px 0px 0px;
+	min-height:304px;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.2), rgba(175, 228, 147, 0.2), rgba(60, 173, 0, 0.2));
+}
+.boxmsg{
+	border:1px solid #008B00;
+	border-top:0px solid #C1CDC1;
+	margin:0px 0px 0px 0px;
+	background: linear-gradient(to right, rgba(60, 173, 0, 0.2), rgba(175, 228, 147, 0.2), rgba(60, 173, 0, 0.2));
+}
+
+.boxpost{
+	background-color: rgba(175, 228, 147, 0.2);
+}
+
+.txtpost{
+	text-indent: 7px;
+	margin:2px 0px 0px 0px;
+	word-wrap:break-word;
+	padding: 0px 10px 0px 0px;
+}
+
+.breakword{
+	word-wrap:break-word;
+}
+
+.textopost{
+	border:1px solid #008B00;
+	min-height:300px;
+
+}
+
+.topico{
+	padding:10px 0px 10px 15px;
+	background-color: #9BCD9B;
+	margin:0px;
+	width:983px;
+	border:1px solid #008B00;
+}
+
+.avico{
+	width:20px;
+	height:20px;
+	margin-top: -2px;
+}
+.cinzaescura{
+	color: #363636;
+}
+
+/*========================================================================  Postar Código  ==================================================*/
+
+
+.divcodigo{
+	width:778px;
+	max-height:600px;
+	overflow:auto;
+	margin:10px 0px;
+}
+
+.destaquecodigo{
+	color:blue;
+	font-weight: bold;
+}
+.contLinha{
+		color: grey;
+		padding-right: 17px;
+		padding-left: 17px;
+		font-size: 12.5px;
+		background: #E7E5DC;
+		width: 10px;
+		height:18px;	
+		
+}
+.fitinha{
+		background: green;
+		width: 2px;
+		height: 18px;
+}
+.textoCodigo{
+		margin:0px 0px 0px 40px;
+		font-size: 15px;
+		color: #1C1C1C;
+		min-width:778px;
+		width:200%;
+		height: 18px;
+}
+.azul{
+		color: blue;
+		font-weight : bold;
+}			
+	
+.tc1{background: #AEE4B7;}
+.tc2{background: #CAECD0;}
+			
+
+/*===============================Recuperar senha=============================*/
+
+
+#submitRecsenha{
+	margin-left: 360px;
+	margin-top: 20px;
+	margin-right: 8px;
+}
+
+/*===============================Tela Usuario=============================*/
+
+.infousr{
+	border:1px solid #336518;
+	border-top:0px;
+	width:100% -2px;
+	height:100%;
+	background-color: rgba(212, 241, 155, 0.3) ;
+}
+
+.fotousuario{
+	margin:10px 10px 10px 10px;
+	width:150px;
+	height:150px;
+	position:static;
+}
+
+.mudafotousuario{
+	margin:110px 10px 10px 10px;
+	width:150px;
+	padding:5px 0px 0px 0px;
+	height:45px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+.mudafotoassunto{
+	margin:40px 10px 0px 7.5px;
+	width:50px;
+	padding: 2.5px 0px 2.5px 0px;
+	height:15px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	font-size: 12px;
+}
+
+.hidden{
+	display: none;
+}
+
+.descsimples{
+	padding: 7px 0px 6px 5px;
+	border:1px solid #336518;
+	border-right:0px solid #336518;
+	background-color: #49800E;
+	color:#102010;
+}
+
+span.nomeusr{
+	font-size: 25px
+}
+
+.descusr{
+	border-bottom:1px solid #454C38;
+	height: 170px;
+}
+
+.txtusr{
+	margin:10px 0px 0px 0px;
+	width:820px;
+}
+
+.menuusr{
+	width:160px;
+	margin:70px 0px 10px 10px;
+}
+
+.margin-left10{
+	padding-left: 10px;
+}
+
+.caixadescritivausr{
+	width:820px;
+	margin:10px 0px 0px 0px;
+	border:1px solid #336518;
+	background-color: rgba(175, 228, 147, 0.3);
+	height:510px;
+}
+
+.titdescusr{
+	background-color: #49800E;
+	border-bottom:1px solid  #454C38;
+	height:20px;
+	padding:10px 0px 10px 15px;
+	font-size:18px;
+	color:white;
+}
+
+.detusr{
+	height:530px;
+}
+.textousr{
+	margin:10px 0px 0px 0px;
+	text-align: right;
+	width:180px;
+}
+
+.textousr2{
+	margin:10px 0px 0px 0px;
+	padding: 0px 0px 0px 5px;
+	text-align: left;
+	width:225px;
+}
+
+.txtdescusr{
+	margin:7px 0px 7px 0px;
+
+}
+
+.resumousr{
+	width:400px;
+	margin: 10px 10px 0px 0px;
+	padding: 5px 0px 5px 0px;
+	min-height: 300px;
+	border-top:1px solid #3CAD00 ;
+	background-color: rgba(248, 248, 248, 0.55);
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/**==============================================================foooter===========================================**/
+footer{
+	min-width:auto;
+	width:100%;
+	padding:10px 0px 10px 0px;
+	text-align: center;
+	background-color: #004520;
+	color:white;
+	bottom:0px;
+
+	position: fixed!important;
+
+}

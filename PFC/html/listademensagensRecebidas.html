@@ -1,0 +1,35 @@
+<div class="tabelaMsg" <?php if($vetMsg->getLida() == 0){ echo "style='border: 2px ridge red;'";} ?>>
+	
+		<table>
+			<tr class="assunto">
+				<td class="">
+					<img src="../imagens/mensagem.png" height="30">
+				</td>
+				<td></td>
+				<td class="tituloListaMensagem">
+					<?php echo $vetMsg->getTitulo(); ?>
+				</td>
+				<td class="infoListaMensagem">
+					Enviado por: <a href="./telaPerfil.php?acao=consultaPerfil&id=<?php echo $vetMsg->getId_Envio();?>"><?php echo $DaoU->consultaId($vetMsg->getId_Envio()); ?></a> em 
+					<?php $hora = explode(" ",$vetMsg->getDataenvio()); $data = explode("-",$hora[0]) ; echo $data[2]."/".$data[1]."/".$data[0]." às ".$hora[1];?>
+			    </td>
+			   	<td class="">
+			   		<img src="../imagens/responder.png" height="30"/>
+				</td>
+				<td class="resExListaMensagem">
+					<a href="./cadastroMensagem.php?titulo=<?php echo $vetMsg->getTitulo(); ?>&user=<?php echo $DaoU->consultaId($vetMsg->getId_Envio()); ?>">Responder</a>
+				<td>
+				<td class="separa"></td>
+				<td class="">
+			   		<img src="../imagens/excluirMsg.png" height="30"/>
+				</td>
+				<td class="resExListaMensagem">
+					<a href="#" onclick="excluirMensagemRecebida(<?php echo $vetMsg->getTitulo(); ?>);">Excluir</a>
+				<td>
+				<td>
+					<input type="checkbox" class="inputExMsg" id="<?php echo $vetMsg->getTitulo() ;?>">
+				</td>
+			</tr>
+		</table>
+		<div class="msgListaMensagem"><?php echo $vetMsg->getTexto();?></div>
+</div>

@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			var tamanho = 50;
+			function aumenta(){
+				var div = document.getElementById("texto");
+				tamanho = tamanho +1;
+				div.style.width = tamanho;
+				//alert(div.innerHTML);
+			}	
+			function diminui(){
+				var div = document.getElementById("texto");
+				tamanho = tamanho -1;
+				div.style.width = tamanho;
+			}	
+		</script>
+		<style>
+			#texto{
+				border: solid 1px black;
+				width:50px;
+				height:50px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="texto"></div>		
+		<input id="mais" type="button" value="+" onclick="aumenta();">
+		<input id="menos" type="button" value="-" onclick="diminui();">
+		
+	</body>
+</html>

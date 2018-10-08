@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Css com Javascript</title>
+		<script language="Javascript">
+			function mudaFundo(id){
+				id.style.backgroundColor = 'tan';
+				id.style.fontSize = '20px';
+				id.style.borderColor = 'red';
+				id.style.height = "400px";
+			}
+		</script>
+		<style>
+			#texto{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+	<!-- a palavra this refere-se ao proprio elemento, ou seja, a tag DIV texto
+	neste caso-->
+	<div id="texto" onmouseover="mudaFundo(this);">
+		Um texto sobre este site.
+	</div>
+	<div id="texto2" onmouseover="mudaFundo(this);">
+		Um texto sobre este site.
+	</div>
+	<div id="texto3" onmouseover="mudaFundo(this);">
+		Um texto sobre este site.
+	</div>
+	</body>
+</html>

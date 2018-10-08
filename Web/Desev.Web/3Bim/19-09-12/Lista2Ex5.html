@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>ex 5</title>
+	<script language='Javascript'>
+	
+	var idade = eval(prompt("Digite a idade da pessoa : "));
+	var c = 0;	
+	var cont = 0;
+	var conta = 0;
+	var resul = 0;
+	var conta = 0;
+	var marcaid = 0;
+	var idadeMax = 0;
+
+	while(idade > 0){
+			
+		var id = eval(prompt("Digite o identificador: "));
+		var nota = eval(prompt("Digite a nota de 0-10: "));
+		if(nota == 10){
+			cont++;
+		}if(nota <= 5){
+			conta++;
+		}
+		if(idade >= idadeMax){
+			idadeMax = idade;
+			marcaid = id;
+			
+		}
+			resul = resul + idade;
+			c++;
+		
+		idade = eval(prompt("Informe sua idade: "));
+	
+	}
+	
+	resul = resul / c;
+	conta = (conta*100) / c;
+		document.write("<br> ");						
+		document.write("<br> Quantidade de notas 10: " + cont);		
+		document.write("<br>");
+		document.write("<br> Média da idade das pessoas: " + resul);
+		document.write("<br> Porcentagem de notas iguais ou menores que 5: " + conta + " %");		
+		document.write("<br> ");				
+		document.write("</br>O identificador de pessoa mais velha: "+ marcaid);
+		document.write("<br> ");
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

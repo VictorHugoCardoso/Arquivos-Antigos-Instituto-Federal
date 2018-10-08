@@ -1,0 +1,9 @@
+Crie um programa que gere um arquivo csv com a
+lista de preços de venda (venda.csv) dos produtos
+de uma loja:
+	-A lista de preços deve conter : codigo, nome, 
+preço de venda
+	-O programa deve solicitar ao usuario a
+margem de lucro a ser aplicada aos produtos
+	-o formato do arquivo de entra (custo.csv)
+é: codigo, estoque, nome, preço de custo e categoria

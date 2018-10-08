@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Ex3</title>
+	<script language="Javascript">
+        a = 0;        
+        while(a < 10){
+	        cd = eval(prompt("Digite o código:"));
+	        ht = eval(prompt("Digite o número de horas trabalhadas:"));
+	        nd = eval(prompt("Digite o número de dependentes:"));
+            sal = (12 * ht) + (40 * nd);
+            inss = sal * 0.085;
+            ir = sal * 0.05;
+            salliq = sal - inss - ir;
+            document.writeln("Código: " + cd + "<br>");
+            document.writeln("Valor descontado para INSS: R$" + inss + "<br>");
+            document.writeln("Valor descontado para IR: R$" + ir + "<br>");
+            document.writeln("Salário líquido: R$" + salliq + "<br><br>");
+            a++;
+        }
+	</script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

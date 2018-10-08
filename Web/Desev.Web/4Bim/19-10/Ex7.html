@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Ex 7 </title>
+		<script language="Javascript">
+
+		var tamanho = 200;
+	function aumenta(){
+		var id = document.getElementById("id");
+		tamanho++;
+		id.style.width = tamanho;
+	}
+	function diminui(){
+		var id = document.getElementById("id");
+		tamanho--;
+		id.style.width = tamanho;
+	}
+		</script>
+		<style>
+			div{
+				border: 1px solid black;
+				width: 200px;
+			} 
+		</style>
+	</head>
+
+	<body>
+	<input type="button" value="[+]" onclick='aumenta();'> | <input type="button" value="[-]" onclick='diminui();'> 
+	<div id="id"> Hello my baby </div>
+	</body>
+
+</html>

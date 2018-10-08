@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Validação</title>
+	<script language="Javascript">
+		function valida(form){
+			var nome = form.nome.value;
+			if(nome == ""){
+				alert('Preencha o nome!');
+				return false;
+			}else{
+				alert('Formulario enviado com sucesso!');
+				return true;
+			}
+		}
+	</script>
+	</head>
+
+		<h2>Digite seus dados</h2>
+		<form onsubmit='return valida(this);' action="http://www.ifpr.edu.br">
+			Nome: <input type='text' id='nome' name='nome'/><br/>
+			<input type='submit' value='enviar'/>
+		</form>
+
+	<body>
+		
+	</body>
+</html>

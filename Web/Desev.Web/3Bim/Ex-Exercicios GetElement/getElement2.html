@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> getElement2 </title>
+		<script language="Javascript">
+			function bemvindo(){
+				var nome = document.getElementById("nome");
+				var text = document.getElementById("welcome");
+				// a propriedade value permite alterar o conteúdo do elemento.
+				text.value = "Seja Bem Vindo "+ nome.value;
+				// a propriedade style permite alterar o CSS do elemento
+				text.style.background ="tan";
+				text.style.color = "navy";
+				text.style.fontSize = '20px';
+			}
+		</script>
+	</head>
+
+	<body>
+		Digite seu nome: <input type="text" id="nome"/>
+		<input type="button" value="clique aqui" onclick="bemvindo()"/><br>
+		<textarea cols="40" rows="5" id="welcome"></textarea>
+		</span>
+	</body>
+
+</html>

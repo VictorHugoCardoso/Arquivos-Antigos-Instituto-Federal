@@ -1,0 +1,12 @@
+Construtor
+
+Método especial que é executado automaticamente no momento da criação de um objeto.
+
+Possui o mesmo nome da classe.
+
+É usado para inicializar o objeto da classe, porém não é obrigatório.
+
+No java, é possivel chamar o construtor da classe pai de dentro do construtor da classe filha, através do comando super().
+
+
+

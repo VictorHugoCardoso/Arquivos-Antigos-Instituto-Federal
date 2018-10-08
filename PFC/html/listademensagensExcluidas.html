@@ -1,0 +1,26 @@
+<div class="tabelaMsg">
+		<table>
+			<tr class="assunto">
+				<td class="unselectable">
+					<img src="../imagens/mensagem.png" height="30">
+				</td>
+				<td class="tituloListaMensagem">
+					<?php echo $vetMsg->getTitulo(); ?>
+				</td>
+				<td class="infoListaMensagem unselectable">
+					Enviado por: <a href="./telaPerfil.php?acao=consultaPerfil&id=<?php echo $vetMsg->getId_Envio();?>"><?php echo $DaoU->consultaId($vetMsg->getId_Envio()); ?></a> em 
+					<?php $hora = explode(" ",$vetMsg->getDataenvio()); $data = explode("-",$hora[0]) ; echo $data[2]."/".$data[1]."/".$data[0]." às ".$hora[1];?>
+			    </td>
+			   	<td class="unselectable">
+			   		<img src="../imagens/restore.png" height="30"/>
+				</td>
+				<td class="resExListaMensagem unselectable">
+					<a href="#" onclick="restaurarMensagem(<?php echo $vetMsg->getTitulo(); ?>)">Restaurar</a>
+				<td>
+				<td>
+					<input type="checkbox" class="inputExMsg" id="<?php echo $vetMsg->getTitulo() ;?>">
+				</td>
+			</tr>
+		</table>
+		<div class="msgListaMensagem"><?php echo $vetMsg->getTexto();?></div>
+</div>

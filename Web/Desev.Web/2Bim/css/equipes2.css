@@ -1,0 +1,25 @@
+body{
+	background: navy;
+	color: white;
+}
+h1{
+	font-weight: 900;
+	background: yellow;
+	color: black;
+	font-variant: small-caps; 
+}
+ul{
+	list-style: disc;
+}
+div.a{
+	color: yellow;
+	text-decoration: underline;
+}
+}
+div.c{
+	text-decoration: line-through;
+}
+ol{
+	list-style: lower-roman;
+}
+

@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title> Ex4 </title>
+	<script language="Javascript">
+		function aumenta(){
+			var numero = eval(document.getElementById("num"));
+			var txt = document.getElementById("txt");
+			txt.style.width = numero.value;
+		}
+	</script>
+	<style>
+		div{
+			border:2px solid black;
+		}
+	</style>
+	</head>
+	<body>
+	
+	<input type="txt" id="num" onblur="aumenta();"/>
+	<div id="txt">
+		Olá Pessoa!
+	</div>
+ 	</body>
+</html>

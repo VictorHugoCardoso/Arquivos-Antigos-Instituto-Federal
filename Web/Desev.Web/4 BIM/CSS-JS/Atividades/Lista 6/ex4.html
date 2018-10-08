@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			var num = 0;
+			function vai(){
+				num++;
+				if(num > 5){
+					num = 0;
+				}
+				var tag = document.getElementById("img");
+				tag.src = "imagens/carro" + num + ".png";	
+
+				var span = document.getElementById("num");
+				span.innerHTML = num;
+			}
+			function volta(){
+				num--;
+				if(num < 0){
+					num = 5;
+				}
+				var tag = document.getElementById("img");
+				tag.src = "imagens/carro" + num + ".png";
+				
+				var span = document.getElementById("num");
+				span.innerHTML = num;
+			}
+		</script>
+		<style>
+			div{
+				width:150px;
+				min-height:128px;
+				border: 1px solid green;
+				padding:10px;
+				align:center;
+			}
+			p{
+				color: red;
+				border-bottom: 1px solid red;			
+			}
+		</style>
+	</head>
+	<body>
+	<input type="button" value="Voltar<<" onclick="volta();">
+	<input type="button" value=">>Proximo" onclick="vai();">
+	</br></br>
+	
+	<div align="center">
+		<p align="left" id="num">0</p>
+		<img id="img" src="imagens/carro0.png"></img>
+	</div>
+
+	</body>
+</html>

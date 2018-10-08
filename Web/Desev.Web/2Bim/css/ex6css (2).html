@@ -1,0 +1,124 @@
+<html>
+    <head>
+    <title>Exercício6 CSS table</title>
+    <style type="text/css">
+    caption{ 
+        font-style: italic;
+    }
+    
+     table {
+        caption-side: bottom;
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 1px solid gray;
+        border-spacing:20px;
+        border-collapse: collapse;
+		height: 80px;
+     }
+    
+    td{
+        padding: 3px;
+        border: 1px dotted gray;
+    }
+    
+	td.right{
+	text-align: right;
+	}
+	
+	td.center{
+	text-align: center;
+	}
+	
+    th{
+    background:orange;
+	border: 1px dotted gray;
+    }
+    
+    tr.laranja {
+		background:#FFD39B;
+       
+    }
+	
+	tr.center{
+	text-align: center;
+	}
+	
+	table table th{
+	background: #5CB3FF;
+	}
+	
+	table table tr{
+	background: white;
+	}
+	
+	img{
+    width: 60px;
+    height: 50px;
+    }
+    </style>
+    </head>
+ <body>
+		<table>
+    
+    <caption>Estática dos municípios paranaenses </caption>
+    
+    	<tr>
+		<th>Cidade</th>
+		<th>População</th>
+		<th>Tipo</th>
+		<th>Altitude</th>
+		<th>Temperatura</th>
+	</tr>
+	<tr>
+		<td rowspan="2">Foz do Iguaçu</td>
+			<td class="right">350.000</td>
+			<td>urbana</td>
+			<td rowspan="2"  class="center">200m</td>
+			<td rowspan="2" class="center">35&deg; C</td>
+			
+		</tr>
+		<tr>
+			<td class="right">21.000 </td>
+			<td>rural</td>
+	</tr>
+	
+	<tr class="laranja">
+		<td>Londrina</td>
+		<td class="right">580.000</td>
+		<td class="right">urbana</td>
+		<td class="center">550m</td>
+		<td class="center">30&deg; C</td>
+	</tr>
+	<tr>
+		<td>Cascavel</td>
+		<td class="right">340.000</td>
+		<td class="right">urbana</td>
+		<td class="center">290m</td>
+		<td class="center">25&deg; C</td>
+	</tr>
+	
+	<tr class="laranja">
+			<td rowspan="2">Medianeira</td>
+			<td class="right">54.000</td>
+			<td>urbana</td>
+			<td rowspan="2" class="center">240m</td>
+			<td rowspan="2" class="center">
+			<table>
+		<tr>
+			<th>Min <img src="nublado.gif"></th>
+			<th>Max <img src="ensolarado.gif"></th>
+			</tr>
+			<tr class="center">
+				<td>13&deg; C</td>
+				<td>41&deg; C</td>
+			</tr>
+		</table></td>
+			<tr class="laranja">
+			<td class="right">3.500 </td>
+			<td>rural</td>
+		</tr>
+		</tr>
+		
+		</table>
+	</body>
+</html>

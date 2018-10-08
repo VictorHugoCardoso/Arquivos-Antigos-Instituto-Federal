@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> getElement3</title>
+		<script language="Javascript">
+			function mudaCorDiv(cor){
+				var div = document.getElementById("texto");
+				div.style.background = cor;
+			}
+		</script>
+		<style>
+			div{
+				border: 1px black solid;
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="radio" name="cor" value="vermelho" onclick="mudaCorDiv('red')"/>Vermelho<br>
+		<input type="radio" name="cor" value="verde" onclick="mudaCorDiv('green')"/>Verde<br>
+		<div id="texto">Hello My Sweet World!</div>
+	</body>
+
+</html>

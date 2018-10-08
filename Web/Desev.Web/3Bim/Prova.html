@@ -1,0 +1,46 @@
+<HTML>
+	<HEAD>
+		<TITLE> Prova </TITLE>
+		<style>
+			#emails{
+				border-bottom:3px solid gray;
+			}
+			#title{
+				border-bottom:3px solid red;
+			}
+		</style>
+
+		<script language="JavaScript">
+			document.writeln("<H1 id='title'>PROVA WEB </H1>");
+			
+			var qtde = eval(prompt("Informe o numero de email que deseja enviar: "));
+
+			criandoEmail(qtde);
+			
+			function altera(){
+				var corFundo = prompt("Digite uma Cor");
+				document.bgColor = corFundo;
+			}
+
+			function verHora(){
+				var hoje = new Date();
+				alert(hoje);
+			}
+			
+			function criandoEmail(q){
+				var cont = 0;
+				for(cont = 0; cont < q; cont++){
+					var email = cont+1;
+					document.writeln("Nome: <input type='text' id='nome'><br>");
+					document.writeln("<p id='emails'> Email" + email + ": <input type='text' id='Email'><br><br></p>");
+				}
+				document.write("<input type='button' value='Altera' onclick='altera()'>");
+				document.write("<input type='button' value='Ver Hora' onclick='verHora()'>");
+			}
+	</script>
+	</HEAD>
+
+	<BODY>
+
+	</BODY>
+</HTML>

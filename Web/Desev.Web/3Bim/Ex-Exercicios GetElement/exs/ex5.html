@@ -1,0 +1,26 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title> EX 5 </title>
+		<script language="Javascript">
+			function destaca(){
+				var money = document.getElementById("money");
+				var dolar = document.getElementById("dol");
+				var div = document.getElementById("emDestaque");
+				var result = money.value * dolar.value;
+				div.innerHTML = result+" Doláres";
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" id="money"/> Real(is) <br>
+		Cotação Do Dólar: <input type="text" id="dol"/> <br>
+		<button onclick="destaca()">Enviar</button>
+		<div id="emDestaque">
+		
+		
+		</div>
+	</body>
+
+</html>

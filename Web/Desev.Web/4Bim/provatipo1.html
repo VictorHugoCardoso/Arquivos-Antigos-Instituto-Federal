@@ -1,0 +1,121 @@
+<html>
+    <head>
+			<meta CHARSET = "iso-8859-1">
+        <title>Prova tipo 1 - Formulario</title>
+        <script type="text/javascript">
+        var tam = 20;
+        var tamDiv = 450;
+		     	function mudaCor(selcores){
+		     		var form = document.getElementById("formulario");
+		     		form.style.background = selcores.value;
+		     	}
+		     	function maiuscula(){
+		         var nome = document.getElementById("nome");
+		     		var textoMaiusculo = nome.value;
+		     		textoMaiusculo = textoMaiusculo.toUpperCase();
+		     		nome.value = textoMaiusculo;
+		     	}
+            function aumenta(){
+            	 tam = tam + 2;
+                var tx = document.getElementById("txarea");
+                tx.style.fontSize = tam+'px';
+            }
+            function diminui(){
+            	 tam = tam - 2;
+                var tx = document.getElementById("txarea");
+                tx.style.fontSize = tam+'px';
+            }
+            function aumentaDiv(){
+            	 tamDiv = tamDiv + 10;
+                var div = document.getElementById("site");
+                div.style.width = tamDiv+'px';
+            }
+            function valida(){
+            	var m = document.getElementById('mes');
+            	var mes = m.value;
+            	var a = document.getElementById('ano');
+            	var ano = a.value;
+            	if(mes>12){
+            		alert("Mês inválido.");
+            	}
+            	if(mes<1){
+            		alert("Mês inválido.");
+            	}
+            	if(mes.length != 2){
+             		alert("Mês inválido.");       		
+            	}
+            	if(ano.length != 4){
+             		alert("Ano inválido.");      		
+            	}
+            	var nome = document.getElementById('nome');
+            	if(nome.value == "") {
+             		alert("Nome inválido.");         	
+            	}
+            	var senha = document.getElementById('senha');
+            	var confirma = document.getElementById('confirma');
+            	if(senha.value != confirma.value){
+             		alert("Senha inválida.");          	
+            	}
+            }
+            function validate(){
+            	var senha = document.getElementById("senha");
+            	var rsenha = document.getElementById("rsenha");
+            	if((senha.value == rsenha.value) && (senha.value.length > 3)){
+            		alert('Formulario enviado com sucesso!');
+            		return true;
+            	}else{
+            		alert('Veja bem colega, as senhas nao bateram!');
+            		return false;
+            	}
+           }
+        </script>
+        <style>
+			#site{
+				border: 2px solid navy;
+				width: 450px;
+				padding: 20px;
+			}
+			#txarea{
+				font-size: 20px;
+				width : 300px;
+				height: 150px;
+			}
+        </style>
+    </head>
+
+    <body>
+    	<h2>Formulário de cadastro</h2>
+			<div id="site">
+			<input type="button" value="+" onclick="aumentaDiv();">  
+			<form id="formulario" onsubmit="return validate();">
+				<table> 
+				<tr>
+				<td>Nome do aluno:</td>	<td>Stephani Caroline Souza da Silva</td>
+				</tr>
+				<td>Cor:</td> <td><select name="selcores" onchange="mudaCor(this);">
+					<option value="white" >--Selecione--</option>
+					<option value="yellow">Yellow</option>
+					<option value="tan">Tan</option>
+					<option value="orange">Orange</option>
+				</select></td>
+				<tr>
+				<td>Nome:</td> <td><input type="text" id="nome" name="nome"/><input type="button" value="^" onclick="maiuscula();"/></td>
+				</tr>
+				<tr>
+				<td><input type="button" value="+" onclick="aumenta();">  
+				<input type="button" value=" - " onclick="diminui();"></td>
+				<td><textarea id="txarea" cols="40" rows="5"></textarea></td></tr>
+				
+				<tr><td>Mês e ano de nascimento:</td><td>
+				<input type="text" id="mes" name="mes" size="3" maxlength="2"/> / <input type="text" id="ano" name="ano" size="5" maxlength="4"/>
+				</td>
+					</tr>
+				<tr><td>Senha:</td> <td><input type="password" id="senha" name="senha"/></td>
+				</tr><tr><td>Confirma senha:</td> <td><input type="password" id="rsenha" name="rsenha"/></td>
+	 			</tr><tr><td></td>
+	 			<td><input type="submit" value="Cadastrar"/></td>
+	 			</table>
+			</form>
+			</div>
+	</body>
+</html>

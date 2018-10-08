@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>ex6</title>
+		<script language='Javascript'>
+			var id = eval(prompt("Informe sua idade: "));
+			var serie = 0;
+			var livros = 0;
+			var notRed =0;
+			while(id>0){
+				var series = eval(prompt("Informe sua serie(1-primeira;2-segunda...)"));
+				var qtdlivros = eval(prompt("Quantidade de livros  que você le por mês: "));
+				var red = eval(prompt("Gosta de fazer redação?(1- sim 0-Não)"));
+				if(series==3){
+					serie++;
+				}
+				if(series==4 && qtdlivros>=livros){
+					livros = qtdlivros;
+				}
+				if(red==0 && series==3){
+					notRed++;
+				}
+				id = eval(prompt("Informe sua idade: "));
+			}
+		    notRed = (100*notRed)/series;
+			document.write("Quantidade de alunos da terceira serie: "+serie);
+			document.write("</br>A maior quantidade de livros lido por um aluno da 4 ª serie: "+ livros);
+			document.write("</br>A porcentagem de alunos que não gostam de fazer redação na 3ª serie: "+notRed+"%" );
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

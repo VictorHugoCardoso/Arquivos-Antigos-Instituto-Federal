@@ -1,0 +1,72 @@
+<!--Barra de login usada quando o usuário esta logado-->
+<?php
+	if(isset($_SESSION["lembrarme1"])){
+		if($_SESSION["lembrarme1"] == 1){
+			if (!isset($_COOKIE["username"])){
+				setcookie('username', $_SESSION["username"], time() + (86400 * 3));
+			}
+			if (!isset($_COOKIE["senha"])){
+				setcookie('senha', $_SESSION["senha"], time() + (86400 * 3));
+			}
+		}
+	}
+?>
+<div id='diverro'></div>
+<div id="loginbar">
+	<div class="left" id="indexlink">
+		<a href="index.php" class="branco">
+			<img src="../imagens/ifpri.png" height="28">
+		</a> 
+	</div>
+	<img class="right expand" src="../imagens/down.png">	
+	
+	<img class="imgLoginbar right " src="<?php echo ($_SESSION['url_foto']); ?>">
+
+	<span class="usrnameLoginbar right"><?php echo($_SESSION["username"]);?></span>
+	<div id="notificacao" class="right">
+	<script>
+		consultaNumNotificacao();
+		setInterval(function(){ 
+		  	consultaNumNotificacao();
+		}, 15000);
+	</script>	
+	</div>	
+	<div class="seta-cima" id="setausr"></div>
+	<div class="right" id='dropusr'>
+		<a href="../telas/telaPerfil.php?acao=consultaPerfil&id=<?php echo $_SESSION["id"]; ?>"><div class="option">Minha Conta</div></a>
+		<div class='divisor'></div>
+		 <?php
+		  	if ($_SESSION["logado"]==1){
+		  		if ($_SESSION["tipousr"] == 0){
+					echo '<a href="../telas/telaAdmin.php"><div class="option">Painel de Administrador</div></a>
+							<div class="divisor"></div>' ;
+		 		}
+		 	}
+		  ?>
+		<a href="../telas/telaMensagem.php?acao=listarRecebidas"><div class="option">Mensagens</div></a>
+		<div class='divisor'></div>
+		<a href="#" onclick="logout()"><div class="option">Logout</div></a>
+	</div>
+</div>
+<div id="englobaNotificacao">
+	<div id="triangle"></div>
+	<div id="divNotificacaoUnica">
+		Notificação
+	</div>
+	<input type="hidden" id="numNotificacaoNum"/>
+	<script>
+		geraNumNotificacao();
+		setInterval(function(){ 
+		  	geraNumNotificacao();
+		}, 15000);
+	</script>	
+	<div id="janelaNotific">
+		<script>
+			consultarNotificacoes();
+			setInterval(function(){ 
+			  	consultarNotificacoes();
+			}, 15000);
+		</script>
+	</div>
+</div>
+

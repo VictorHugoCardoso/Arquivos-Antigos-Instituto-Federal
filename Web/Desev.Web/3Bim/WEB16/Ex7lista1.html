@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>ex7Lista1</title>
+		<script language='Javascript'>
+			var slmedio = eval(prompt("Digite o seu saldo médio: "));
+			function mudaCor(cor){
+				document.getElementById('Cor').style.color = cor;
+			}
+			if(slmedio<=200){
+				var cd = 0;
+				var c = "red";
+			}else if(slmedio<=400){
+				var cd = 0.2*slmedio;
+				var c = "orange";
+			}else if(slmedio<=600){
+				var cd = 0.3*slmedio;
+				var c = "green";
+			}else{
+				var cd = 0.4*slmedio;
+				var c = "blue";
+			}
+			document.write("<h3 id='Cor'>O seu saldo médio: "+slmedio);
+			document.write(" O seu crédito:"+cd+"</h3>");
+			mudaCor(c);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

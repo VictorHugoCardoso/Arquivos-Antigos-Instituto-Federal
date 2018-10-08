@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Ex3</title>
+	<script language="Javascript">
+
+	func = 0;	
+
+	while(func < 10){
+		
+		func = func + 1;
+		var cod = eval(prompt("Digite o codigo: "));		
+		var hora = eval(prompt("Digite o Numero de horas de serviço: "));
+		var dependente = eval(prompt("Digite o Numero de Dependentes: "));
+
+		sal1 = (hora * 12) + (dependente * 40);
+
+		inss = sal1 * 0.085;
+		ir = sal1 * 0.05;
+
+		sal = sal1 - (inss + ir);
+
+
+		document.writeln("<br> ");		
+		document.writeln(func + " : ");				
+		document.writeln("<br> Codigo do funcionario: " + cod);		
+		document.writeln("<br> Valor de descontado INSS: " + inss);
+		document.writeln("<br> Valor de descontado IR: " + ir);
+		document.writeln("<br> Salario Liquido do funcionario: " + sal);				
+		document.writeln("<br> ");		
+		document.writeln("<br> ");				
+
+	}
+
+	</script>
+</head>
+<body>
+
+</body>
+
+</html>

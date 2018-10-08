@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>ex4</title>
+		<script language='Javascript'>
+			var id =  eval(prompt("Digite a sua idade: "));
+			var totL = 0; //total de livros
+			var totID = 0; //total de idades
+			var iF = 0; //contador feminino
+			var iH = 0; //contador masculino
+			var totQQ = 0; //total de pessoas que nao leram
+			var totQ = 0; //total de pessoas 
+			var x =0;
+			var mediaH = 0;
+			while(id>0){
+				totQ++;
+				var sexo = prompt("Digite o seu sexo:(f/m) ");
+				var qntde = eval(prompt("A quantidade de livros que leu em 2006: "));
+				if(id<=10){
+					totL =  totL+qntde;
+				}
+				if(sexo=="f" && qntde>=5){
+					iF++;
+				}
+				if(sexo=="m" && qntde<5 ){
+					iH++;
+					totID = totID + id;
+					mediaH = totID/iH;
+				}
+				if(qntde == 0){
+					totQQ++;
+					x = (100*totQQ)/totQ;
+				}
+				id =  eval(prompt("Digite a sua idade: "));
+			}
+			document.write("Quantidade total de livros lidos pelos intrevistados menores de 10 anos: "+totL);
+			document.write("</br>Quantidade de mulheres que leram 5 livros ou mais: "+ iF);
+			document.write("</br>A media da quantidade de homens que leram menos de 5 livros: "+ mediaH);
+			document.write("</br>Percentual  de pessoas que não leram: "+ x+"%");
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			var num = 2;
+			function muda(){
+				if(num > 4){
+					num = 1;
+				}
+				var tag = document.getElementById("img");
+				tag.src = "imagens/carro" + num + ".png"
+				num++
+			}
+		</script>
+		<style>
+			img{
+				border: 1px solid green;
+			}
+		</style>
+	</head>
+	<body>
+	<input type="button" value="Proximo" onclick="muda();">
+	</br></br>
+		<img id="img" src="imagens/carro1.png"></img>
+
+	</body>
+</html>

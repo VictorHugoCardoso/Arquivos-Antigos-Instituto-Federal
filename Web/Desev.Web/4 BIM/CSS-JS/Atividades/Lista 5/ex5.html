@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> Exercicio 5 </title>
+		<script language="Javascript">
+			function escrever(){
+				var input = document.getElementById("input");
+				var tag = document.getElementById("div1");
+				tag.style.border = "solid 1px blue";
+				tag.innerHTML = input.value;
+			}	
+		</script>
+
+	</head>
+	<body>
+		<input type ="text" id="input">
+		<input type="button" value="Aperte!" onclick = "escrever();">
+	<div id="div1">
+	</div>
+
+	</body>
+</html>

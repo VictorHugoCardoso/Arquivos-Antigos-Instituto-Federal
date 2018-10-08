@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<title>Css com Javascript</title>
+	<script langauge="Javascript">
+		function mudaFundo(){
+			var elemento = document.getElementById("texto");
+			elemento.style.backgroundColor = 'tan';
+			elemento.style.fontSize = '20px';
+			elemento.style.borderColor = 'red';
+			elemento.style.height = '400px';
+		} 
+	</script>
+	<style>
+		#texto{
+			border: 1px solid black;
+		}
+	</style>
+	</head>
+	<body>
+
+	<div id="texto" onmouseover="mudaFundo();">
+		Um texto sobre este site.
+	</div>
+ 	</body>
+</html>

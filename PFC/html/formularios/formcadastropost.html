@@ -1,0 +1,17 @@
+<div class="box80">
+	<div class="titulo">
+		<span class="titulotexto">Cadastrar Post</span>
+	</div>
+		<div class="inlineblock divCadastroUsuario">
+			<label class="fontspan block">Post</label>
+			<textarea class="textareaCadastro block" placeholder="Digite aqui seu post" id="post" name="texto" rows="10" cols="50"></textarea>
+			<div class="botao">
+				<input id="respostaPost" class="submit" type="submit" value="Postar">
+				<a href="<?php echo $_SESSION["pagina"]; ?>"><input class="submit cancelar" type="button" value="Cancelar"></a>
+
+				<input type="hidden" name="id_topico" value="<?php echo $_GET["id"]; ?> ">
+				<input type="hidden" name="acao" value="cadastrar">
+			</div>
+		</div>
+	
+</div>

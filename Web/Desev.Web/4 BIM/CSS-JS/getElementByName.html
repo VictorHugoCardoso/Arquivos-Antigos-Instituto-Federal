@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>getElementByTagName</title>
+		<script language="Javascript">
+			function exibe(cor, id){
+				id.style.background = cor;
+				id.innerHTML = '<h1>' + id.innerHTML + '<h1>';			
+			}
+		</script>
+	</head>
+	<body>	
+	
+	<div id="primeiro" onmouseover="exibe('red', this);">Um texto sobre este site</div>
+	<div id="segundo" onmouseover="exibe('green', this);">Um texto sobre este site - parte 2</div>
+	<div id="terceiro" onmouseover="exibe('blue', this);">Um texto sobre este site - parte 2.1</div>
+	
+	</body>
+</html>

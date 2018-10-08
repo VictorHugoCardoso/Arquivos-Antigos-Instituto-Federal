@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Ex10</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    <script language="Javascript">
+        document.writeln("<table border = '1' cellspacing='0' cellpadding='5'>");
+        for(linha=0;linha < 5;linha++){      
+            document.writeln("<tr>");
+            for(col=0;col < 15;col++){
+	            conta = col %2;
+	            if (conta == 0) {
+	                    document.write("<td align=center>");
+	                    document.write("<img src='sun.png'>");
+	                    document.write("</td>");
+	            } else {
+                    document.write("<td align=center>");
+                    document.write("<img src='moon.png'>");
+                    document.write("</td>");
+                }
+            }
+            document.writeln("</tr>");
+        }
+        document.writeln("</table>");
+    </script>
+
+</html>

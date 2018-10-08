@@ -1,0 +1,26 @@
+a:hover{ /*quando o mouse estiver em cima da linha*/
+	color: red;
+	font-weight: bold;
+}
+a:visited{
+	color:maroon;
+}
+a:link{
+	color: navy;
+}
+/*tirar o sublinhado de tds as linhas*/
+a{
+	text-decoration: none;
+}
+p.destaque{
+	background: yellow;
+}
+p.atencao{
+	background: maroon;
+	color: white;
+	font-variant: small-caps; 
+	font-weight: 900;
+}
+div{
+	background: green;	
+}

@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+
+			function mudaCor(div){
+				var vetor = div.getElementsByTagName('ul');
+				for(i=0;i<vetor.length;i++){			
+					vetor[i].style.background = '#CCC';
+					vetor[i].style.color = 'red';
+				}
+			}
+
+			function voltaCor(div){
+				var vetor2 = div.getElementsByTagName('ul');
+				for(c=0;c<vetor2.length;c++){			
+					vetor2[c].style.background = 'white';
+					vetor2[c].style.color = 'black';
+				}
+			}
+
+	
+		</script>
+		<style>
+			div{
+				border: 1px solid green;
+				width:250px;
+				min-height:100px;
+			}
+		</style>
+	</head>
+	<body>
+	<div onmouseover="mudaCor(this);" onmouseout="voltaCor(this);">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+		</ul>
+	</div>
+</br></br>
+	<div onmouseover="mudaCor(this);" onmouseout="voltaCor(this);">
+		<UL>
+			<LI>Item 5</LI>
+			<LI>Item 6</LI>
+			<LI>Item 7</LI>
+			<LI>Item 8</LI>
+		</UL>
+	</div>
+
+	</body>
+</html>

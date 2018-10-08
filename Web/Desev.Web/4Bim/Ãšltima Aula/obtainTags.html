@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		body{
+			margin:auto;
+			width:600px;
+		}
+		div{
+			border:1px solid navy;
+			background:#CCC;
+			padding:10px;
+		}
+		#esquerda{
+			float:left;
+			background:azure;
+		}
+		#direita{
+			float:right;
+		}
+		p{
+			border:1px solid red;
+		}
+	</style>
+	<script>
+		function mudacor(div,asd){
+			var vetor = div.getElementsByTagName('p');
+			for(i=0;i<vetor.length;i++){
+				vetor[i].style.backgroundColor = 'red';
+			}
+			var vetor1 = asd.getElementsByTagName('p');
+			for(i=0;i<vetor1.length;i++){
+				vetor1[i].style.backgroundColor = 'green';
+			}
+		}
+		function mudaagain(div,asd){
+			var vetor = div.getElementsByTagName('p');
+			for(i=0;i<vetor.length;i++){
+				vetor[i].style.backgroundColor = 'azure';
+			}
+			var vetor1 = asd.getElementsByTagName('p');
+			for(i=0;i<vetor1.length;i++){
+				vetor1[i].style.backgroundColor = '#CCC';
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<div id="esquerda" onmouseover="mudacor(esquerda,direita)" onmouseout="mudaagain(esquerda,direita)">
+		<p>Um Texto da esqueda 1</p>
+		<p>Um Texto da esqueda 2</p>
+	</div>
+	<div id="direita" onmouseover="mudacor(direita,esquerda)" onmouseout="mudaagain(direita,esquerda)">
+		<p>Um Texto da direita 1</p>
+		<p>Um Texto da direita 2</p>
+	</div>
+
+</body>
+</html>

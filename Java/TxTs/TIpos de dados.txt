@@ -1,0 +1,17 @@
+Tipos de dados primitivos do Java
+
+int : Dados inteiros de tamanho reduzido (-2.10^9 até 2.10^9)
+
+long : Dados inteiros de tamanho longo (-9.10^18 a 9.10^18)
+
+float : Dados de ponto flutuante (-3,40286456465489987.10^38 a 3,6545646486521328543.10^38)
+
+double: Dados de ponto flutuante de tamanho grande (-4,x.10^324)
+
+boolean : Tipo Lógico
+
+char : Representa 1 caractere
+
+Link Documentação do Java
+
+http://download.oracle.com/javase/6/docs/api/

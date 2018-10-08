@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<style>
+			div{
+				border: 1px solid black;
+				margin-bottom: 20px;
+				padding: 20px;
+			}			
+		</style>
+		<script type="text/javascript">
+		// Como pegar tags que estao dentro de outra tag?
+		// ou seja, queremos apenas estas tags, e nao as que estão fora
+		function destaca(div){
+			var vetor = div.getElementsByTagName('span');
+			for(i=0;i<vetor.length;i++){
+			
+				vetor[i].style.background = 'red';
+				vetor[i].innerHTML = vetor[i].innerHTML.toUpperCase();
+			}
+		}
+		</script>		
+	</head>
+	<body>
+	
+	
+	<div onmouseover="destaca(this);">
+		<span>Este texto representa o conteuda da primeira span</span>
+		<span>Este texto representa o conteuda da primeira span</span>
+		<span>Este texto representa o conteuda da primeira span</span>
+	</div>
+	
+	<div>
+		<span>Texto da segunda span</span>
+	</div>
+	
+	
+	
+	
+	</body>
+</html>

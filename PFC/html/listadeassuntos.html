@@ -1,0 +1,48 @@
+<div class='tabelaAssunto'> 
+  <table> 
+	  <tr class='assunto'> 
+		  <td class='divImgAssunto'> 
+			  <div class="imgusrhover">
+				<div class="absolute mudafotoassunto left" align="center">
+				Alterar
+				</div>
+				<img src="<?php echo $as->getIcone(); ?>" class="iconeassunto">
+				<form action="../controller/ControllerAssunto.php" enctype="multipart/form-data" method="POST" class="formimg">
+					<input type="file"  name="imagem" class="hidden mudaimgas">
+					<input type="hidden" value="<?php echo $as->getId();?>" class="idacao" name="id">
+					<input type="hidden" value="mudarimg" class="imgacao" name="acao">
+					<input type="submit" value="" class="botas hidden">
+				</form>
+			</div>
+		  </td> 
+		  <td class='divTxtAssunto'> 
+			  <a href = 'telaTopico.php?acao=listar&idassunto=<?php echo $as->getId(); ?>&nomeassunto=<?php echo $as->getNome(); ?>'><?php echo $as->getNome(); ?></a> 
+			  <?php
+			  	if ($_SESSION["logado"]==1){
+			  		if ($_SESSION["tipousr"] == 0){
+			  			$hue = '"excluir"';
+						echo "<a href = '../controller/ControllerAssunto.php?id=".$as->getId()."&acao=alterar' class='right nomargin'><img title='Alterar' src='../imagens/alterar.png' width = '15'></a>" ;
+						echo "<a href = 'javascript:excluirAssunto(".$as->getId().",".$hue." )' class='right nomargin'><img title='Excluir' src='../imagens/excluir.png' width = '15'></a>" ;
+			 		}
+			 	}
+			 	
+			  ?>
+			  <br> 
+			<?php echo $as->getDescricao(); ?>
+		  </td> 
+		  <td class='divStatAssunto'> 
+			  <b><?php echo $qtdtop; ?></b> Tópico <br> 
+			  <b><?php echo $qtdpost; ?></b> Post <br> 
+
+		  </td> 
+		  <td class='divLastAssunto'> 
+			  <b>Ultimo Topico: </b><br> 
+			  	<?php
+					$newtext = wordwrap($titulo, 20, "<br>" ,true);
+
+					echo $newtext;
+				?>
+		  </td> 
+	  </tr> 
+  </table> 
+</div> 

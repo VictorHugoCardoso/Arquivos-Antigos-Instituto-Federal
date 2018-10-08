@@ -1,0 +1,9 @@
+ARRAY - VETOR - JAVASCRIPT
+
+
+Funçoes para obter uma referencia a uma ou várias tags:
+-> getElementsByTagName
+-> getElementsByName
+
+Função para alterar o conteúdo de uma TAG:
+-> innerHTML

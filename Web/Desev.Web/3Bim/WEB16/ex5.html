@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>ex5</title>
+		<script language='Javascript'>
+			var idade = eval(prompt("Informe sua idade"));
+			var Midade = 0;//maior idade ja informada
+			var Mid =0;//identificador da pessoa mais velha
+			var notaDez = 0;
+			var notaMenos = 0;
+			var media = 0;
+			var i = 0;
+			while(idade>0){
+				
+				var id = eval(prompt("Informe seu indentificador"));
+				var opn = eval(prompt("Opnião em relação a peça(nota de 0 a 10)"));
+				if(opn == 10){
+					 notaDez++;
+				}else if(opn<=5){
+					notaMenos++;
+				}
+				if(idade>=Midade){
+					Midade = idade;
+					Mid = id;
+				}
+				media = media + idade;
+				i++;//quantidade de pessoas que responderam
+				
+				idade = eval(prompt("Informe sua idade"));
+			}
+			notaMenos = (100*notaMenos)/i;
+			media = media /i;
+			document.write("A quantidade de pessoas que deram nota 10: "+ notaDez);
+			document.write("</br>A media da idade das pessoas que responderam: "+ media);
+			document.write("</br>A porcentagem de pessoas que deram nota 5 ou menos: "+ media+"%");
+			document.write("</br>O identificador da pessoa mais velha: "+Mid);
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

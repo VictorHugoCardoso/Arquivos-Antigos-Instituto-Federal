@@ -1,0 +1,85 @@
+CREATE TABLE tbCliente
+(codigo_cli INT,
+CPF_cli CHAR(11),
+nome_cli VARCHAR(20) NOT NULL,
+data_cadastro DATE,
+cidade_cli VARCHAR(20),
+UF_cli CHAR(2) DEFAULT 'PR',
+CONSTRAINT un_CPFcli UNIQUE (CPF_cli),
+CONSTRAINT pk_tbCliente PRIMARY KEY (codigo_cli)
+);
+
+CREATE TABLE tbCategoria 
+(codigo_categoria INT,
+nome_categoria VARCHAR(20) NOT NULL,_tb
+CONSTRAINT pk_tbCategoria PRIMARY KEY (codigo_categoria)
+);
+
+CREATE TABLE tbClasse
+(codigo_classe INT,
+nome_classe VARCHAR(20) NOT NULL,
+preco_classe NUMERIC(4,2) NOT NULL,
+CONSTRAINT pk_tbClasse PRIMARY KEY (codigo_classe),
+CONSTRAINT ck_NomeClasse CHECK (nome_classe IN ('Lançamento', 'Catálogo'))
+);
+
+CREATE TABLE tbTitulo
+(codigo_titulo INT,
+nome_titulo VARCHAR(50) NOT NULL,
+ano NUMERIC(4),
+codigo_categoria INT,
+codigo_classe INT,
+CONSTRAINT pk_tbTitulo PRIMARY KEY (codigo_titulo),
+CONSTRAINT fk_tbTitulo_tbCategoria FOREIGN KEY (codigo_categoria)
+	REFERENCES tbCategoria (codigo_categoria)
+	ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT fk_tbTitulo_tbClasse FOREIGN KEY (codigo_classe) REFERENCES
+tbClasse (codigo_classe)
+	ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+CREATE TABLE tbFilme
+(codigo_filme INT,
+codigo_titulo INT,
+nome_distribuidor VARCHAR(20),
+CONSTRAINT pk_tbFilme PRIMARY KEY (codigo_filme),
+CONSTRAINT fk_tbFilme_tbTitulo FOREIGN KEY (codigo_titulo) REFERENCES tbTitulo (codigo_titulo)
+	ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE tbEmprestimoDevolucao
+(codigo_cli INT,
+codigo_filme INT,
+data_emprestimo DATE NOT NULL,
+data_devolucao_prevista DATE NOT NULL,
+data_devolucao_efetiva DATE, 
+valor_multa NUMERIC(4,2) DEFAULT 0,
+CONSTRAINT pk_tbEmpDev PRIMARY KEY (codigo_cli, codigo_filme, data_emprestimo),
+CONSTRAINT fk_tbEmpDev_tbCliente FOREINGN KEY (codigo_cli) REFERENCES
+tbCliente (codigo_cli)
+	ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT fk_tbEmpDev_tbFilme FOREIGN KEY (codigo_filme) REFERENCES
+tbFilme (codigo_filme)
+	ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

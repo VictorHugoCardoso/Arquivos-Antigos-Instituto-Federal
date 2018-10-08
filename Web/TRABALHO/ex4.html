@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> EX4 </title>
+		<style>
+			div.asd{
+				background: lightblue;
+				height: 70px;
+				width: 400px;
+				padding-top: 25px;
+				padding-left: 30px;
+			}
+			td.asd{
+				background: lightgreen;
+				width: 150px;
+			}
+		</style>
+		<script>
+			function calc(){
+				var val1 = document.getElementById("val1");
+				var val2 = document.getElementById("val2");
+				var val3 = document.getElementById("val3");
+				var quant1 = document.getElementById("quan1");
+				var quant2 = document.getElementById("quan2");
+				var quant3 = document.getElementById("quan3");
+				var div = document.getElementById("emDestaque");
+				var result = (val1.value * quant1.value) + (val2.value * quant2.value) + (val3.value * quant3.value);
+				div.innerHTML = "Valor Total: R$"+result;
+			}
+			function calc1(){
+				var val1 = document.getElementById("val1");
+				var quant1 = document.getElementById("quan1");
+				var result = val3.value * quant3.value;
+				var diva = document.getElementById("a");
+				diva.innerHTML = "sdasdasd";
+			}
+			function calc2(){
+				var val2 = document.getElementById("val2");
+				var quant2 = document.getElementById("quan2");
+				var result = parseFloat(val3.value) + parseFloat(quant3.value);
+			}
+			function calc3(){
+				var val3 = document.getElementById("val3");
+				var quant3 = document.getElementById("quan3");
+				var result = parseFloat(val3.value) + parseFloat(quant3.value);
+				
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<table cellspacing="10">
+			<tr>
+				<td>Item: </td>
+				<td><input size="15" type="text"/></td>
+				<td>Valor: </td>
+				<td><input size="15" type="text" id="val1"/></td>
+				<td>Quantidade: </td>
+				<td><input size="15" type="text" id="quan1"/></td>
+				<td><button onclick="calc1()">=</button></td>
+				<td class="asd" ><div id="a"></div></td>
+			</tr>
+			<tr>
+				<td>Item: </td>
+				<td><input size="15" type="text"/></td>
+				<td>Valor: </td>
+				<td><input size="15" type="text" id="val2"/></td>
+				<td>Quantidade: </td>
+				<td><input size="15" type="text" id="quan2"/></td>
+				<td><button onclick="calc2()">=</button></td>
+				<td class="asd"></td>
+			</tr>
+			<tr>
+				<td>Item: </td>
+				<td><input size="15" type="text"/></td>
+				<td>Valor: </td>
+				<td><input size="15" type="text" id="val3"/></td>
+				<td>Quantidade: </td>
+				<td><input size="15" type="text" id="quan3"/></td>
+				<td><button onclick="calc3()">=</button></td>
+				<td class="asd"></td>
+			</tr>
+		</table>
+		<td><button onclick="calc()">Calcular</button></td>
+		<div class="asd" align="left" valign="center">
+			<font id="emDestaque" size="6"></font>
+		</div>	
+	</body>
+
+</html>

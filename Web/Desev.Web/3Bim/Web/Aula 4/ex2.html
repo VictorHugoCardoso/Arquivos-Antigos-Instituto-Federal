@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Ex2</title>
+	<script language="Javascript">
+		par = 0;
+		impar = 0;
+		a = 0;
+        somap = 0;
+        somai = 0;
+        mediai = 0;	
+
+		while (a < 10){
+			var n = eval(prompt("Digite um número:"));
+			op = n % 2;
+			if(op==0){
+				par = par + 1;
+                somap = somap + n;
+			}
+			else{
+				impar = impar + 1;
+                somai = somai + n;
+			}
+        mediai = somai / impar;
+        a++;
+        }
+        document.writeln("A quantidade de números pares é " + par + ".<br>");
+        document.writeln("A quantidade de números impares é " + impar + ".<br>");
+        document.writeln("A soma dos números pares é " + somap + ".<br>");
+        document.writeln("A média dos números impares é " + mediai + ".<br>");
+	</script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

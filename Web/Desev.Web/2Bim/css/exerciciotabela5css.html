@@ -1,0 +1,79 @@
+<html>
+<head>
+		<title>Exercicio5 CSS table</title>
+		<style type="text/css">
+		caption{
+			font-style: italic;
+			font-family: verdana;
+			margin-top: 10px;
+		}
+		table{
+			text-align: center;
+			caption-side: bottom;
+			margin-left: 10px;
+			border-spacing: 5px;
+			border-collapse: collapse;
+			border: 3px solid black;
+		}
+		td{
+			border: 2px;
+			padding: 3px;
+			border: 1px dotted black;
+		}
+		th{
+			border: 1px dotted black;
+			background: darkorange;
+		}
+		tr.odd{
+			background: tan;
+		}
+		td.tipo{
+			rowspan: 2px;
+		}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<caption>Estatísticas dos municípios paranaenses</caption>
+			<tr>
+				<th>Cidade</th>
+				<th>População</th>
+				<th>Tipo</th>
+				<th>Altitude</th>
+				<th>Temperatura</th>
+			</tr>
+			<tr>
+				<td class="tipo">Foz do Iguaçu</td>
+				<td>350.000<br>21.000</td><td>Urbana<br>Rural</td>
+				<td>200m</td>
+				<td>35&deg; C</td>
+			</tr>
+			<tr class="odd">
+				<td>Londrina</td>
+				<td>580.000</td>
+				<td>Urbana</td>
+				<td>550m</td>
+				<td>30&deg; C</td>
+			</tr>
+			<tr>
+				<td>Cascavel</td>
+				<td>340.000</td>
+				<td>Urbana</td>
+				<td>290m</td>
+				<td>25&deg; C</td>
+			</tr>
+			<tr class="odd">
+				<td>Medianeira</td>
+				<td>54.000<r>3.500</td>
+				<td>Urbana<br>Rural</td>
+				<td>240m</td>
+				<td><table>
+				<th>Min <img src="nublado.gif"></th>
+				<th>Max <img src="ensolarado.gif"></th>
+				<tr><td class="odd">13&deg; C</td><td class="odd">41&deg; C</td></tr>
+			</tr>
+		</table>
+	</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <title>Uso do input</title>
+   </head>
+
+   <body>
+   
+      <!-- definir um formulario no html, com campos -->
+      <!-- um exemplo de servidor eh o 'apache httpd' -->
+      <!-- action envia para o servidor -->
+      <!-- <form action="http://www.google.com.br"> -->
+      <form>
+      
+      Nome: <input type="text" name="nome" maxlength="20"/><br/>
+      Email: <input type="text" name="email"/><br/>
+      CPF: <input type="text" name="cadastrodepessoafisica" maxlength="11"/><br/>
+      Ano: <input type="text" maxlength="4" name="ano" size="4"/><br/>
+      Senha: <input type="password" name="senha" maxlength="20"/> <br/>
+      
+      
+      <hr>
+      <p>O que você achou do filme o hobbit?</p>
+      <!-- name precisa ser igual!!!!!!! -->
+      <input type="radio" name="conceito">Excelente<br>
+      <input type="radio" name="conceito">Razoável<br>
+      <input type="radio" name="conceito">Lamentavel<br>
+      
+      <hr>
+      <p>Quais os seus filmes favoritos?</p>
+      <input type="checkbox" name="favoritos[]">Ação<br>
+      <input type="checkbox" name="favoritos[]">Aventura<br>
+      <input type="checkbox" name="favoritos[]">Drama<br>
+      <input type="checkbox" name="favoritos[]">Suspense<br>
+      
+      <hr>
+      <br>
+      Senha: <input type="password" name="senhasecreta">
+      
+      <br>
+      <br>
+      <!-- value eh oq esta escrito no botao -->
+      <input type="submit" value="enviar"/>
+      
+      </form>
+ 
+   </body>
+
+</html>

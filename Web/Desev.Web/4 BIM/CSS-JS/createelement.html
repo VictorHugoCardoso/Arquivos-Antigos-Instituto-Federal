@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Create Element</title>		
+		
+	</head>
+	
+	<body>
+		<div id="pai" style="border: 2px solid red; padding: 20px; ">
+			<div id="conteudo" style="border: 1px solid black;"></div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+			var span = document.createElement('span');
+			span.innerHTML = 'conteudo da span';
+			var div = document.getElementById('conteudo');
+			div.appendChild(span);			
+			var input = document.createElement('input');
+			var divPai = div.parentNode;
+			divPai.appendChild(input);
+			
+			var br = document.createElement('br');
+			divPai.appendChild(br);
+			
+			var img = document.createElement('img');
+			img.src = "carro1.png";
+			img.style.width="50px";
+			divPai.appendChild(img);
+			
+		</script>
+	
+</html>

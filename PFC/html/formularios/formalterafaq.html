@@ -1,0 +1,61 @@
+<div class="titulo">
+	<span class="titulotexto">Nova Pergunta Frequente</span>
+</div>
+
+<div class="inlineblock divCadastroUsuario">
+	<div class="left divfaq">
+	<b>Pergunta</b>
+	<textarea class="textareaFaq block" placeholder="Escreva a pergunta" id="pergunta" name="texto" rows="10" cols="50"><?php echo $faq->getPergunta();?></textarea>
+	</div>
+	<div class="left divfaq">
+	<b>Resposta</b>
+	<textarea class="textareaFaq block" placeholder="Escreva a resposta" id="resposta" name="texto" rows="10" cols="50"><?php echo $faq->getResposta();?></textarea>
+	</div>
+	<div class="botao">
+		<input id="botalterafaq" class="submit" onclick="validaform()" type="submit" value="Postar">
+		<a href="<?php session_start(); echo $_SESSION["pagina"]; ?>"><input class="submit cancelar" type="button" value="Cancelar"></a>
+		<input type="hidden" name="acao" value="alterar">
+		<input type="hidden" name="id" value="<?php echo $faq->getId();?>">
+	</div>
+</div>
+
+
+<script>
+
+	function validaform(){
+		pergunta = document.getElementById("pergunta");
+		resposta = document.getElementById("resposta");
+		if(validaTamanho(pergunta.value)){
+			mostraErro("Insira uma pergunta com mais de 3 caracteres");
+			$('#pergunta').css('border', '2.9px ridge red');
+		}else if(validaTamanho(resposta.value)){
+			mostraErro("Insira uma resposta com mais de 3 caracteres");
+			$('#email').css('border', '2.9px ridge red');
+		}else{
+			 $.ajax({
+				url:"../controller/ControllerFaq.php",
+				type:"POST",
+				data:{
+					acao:"alterar",
+					id: <?php echo $faq->getId();?>,
+					pergunta: pergunta.value,
+					resposta: resposta.value,
+				},
+			})
+			.done(function(result){
+				if (result != "erro"){
+					alertify.success("Pergunta alterada com sucesso");
+				}else{
+					alertify.error("Erro ao alterar pergunta");
+
+				}
+				setTimeout(function(){
+				   location.href= result;
+				}, 1500);
+								
+				
+			});
+		}
+	} 
+
+</script>

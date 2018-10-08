@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Ex4</title>
+	    <script language="Javascript">
+            function recebedois(a,b){
+                resultado = a / b;
+		        return resultado;
+            }
+	        function recebequatro(c,d,e,f){
+                var m = Math.max(c,d,e,f);
+                return m;
+            }
+            var n1 = prompt("Digite o número 1 para dividir:");
+            var n2 = prompt("Digite o número 2 para dividir:");
+            var n3 = prompt("Digite o número 1 para retornar:");
+            var n4 = prompt("Digite o número 2 para retornar:");
+            var n5 = prompt("Digite o número 3 para retornar:");
+            var n6 = prompt("Digite o número 4 para retornar:");
+            var multi = recebedois(n1,n2) * recebequatro(n3,n4,n5,n6);
+            document.write("<h1>Resultado: " + multi + "</h1><br>");
+	    </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

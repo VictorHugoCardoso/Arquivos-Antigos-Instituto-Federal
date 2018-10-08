@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> EX2 </title>
+		<script>
+			function imga(){
+				var option = document.getElementById("opcao");
+				var imagens = document.getElementById("emDestaque");
+				
+				if (option.value == "foz"){
+					imagens.innerHTML = "<img src='foz.jpg'>";
+				}
+				if (option.value == "sao"){
+					imagens.innerHTML = "<img src='sao.jpg'>";
+				}
+				if (option.value == "joao"){
+					imagens.innerHTML = "<img src='joao.jpg'>";
+				}
+				if (option.value == "bombas"){
+					imagens.innerHTML = "<img src='bombas.jpg'>";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		Cidades:<select onclick="imga()" id="opcao">
+		<option value="foz"> Foz Do Iguaçu</option>
+		<option value="sao"> São Paulo</option>
+		<option value="joao"> João Pessoa</option>
+		<option value="bombas"> Bombas</option>
+		</select>
+		
+		
+		<div id="emDestaque">
+		
+		
+		</div>
+
+	</body>
+
+</html>

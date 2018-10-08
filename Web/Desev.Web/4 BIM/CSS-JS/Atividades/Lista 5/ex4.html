@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function destacar(id){
+				var img = document.getElementById(id);
+				id.style.border = "dotted red 1px";
+			}	
+			function limpar(id){
+				var img = document.getElementById(id);
+				id.style.border = "";
+			}	
+
+		</script>
+	</head>
+	<body>
+	
+	<img id="img1" src="imagens/carro1.png" onmouseover="destacar(this);" onmouseout="limpar(this);"></img>
+	<img id="img2" src="imagens/carro2.png" onmouseover="destacar(this);" onmouseout="limpar(this);"></img>
+	<img id="img3" src="imagens/carro3.png" onmouseover="destacar(this);" onmouseout="limpar(this);"></img>
+	<img id="img4" src="imagens/carro4.png" onmouseover="destacar(this);" onmouseout="limpar(this);"></img>
+	
+	</body>
+</html>
+

@@ -1,0 +1,8 @@
+Criar uma classe Vendedor com 2 métodos calcularComissao, sendo que o primeiro recebe como parâmetro somente o valor da venda, e o segundo recebe também o percentual de comissão a ser aplicado.
+Além disso , os 2 métodos retornam o valor da comissão.
+O método que não recebe como parâmetro o percentual, utiliza por padrao 5% + 20
+
+Criar uma classe Loja que invoque o método vendedor com os seguintes conjunatos de valores :
+- Venda de 500, comissão de 15%1
+- Venda de 100, sem % comissão 
+- Venda de 350, sem % comissão 

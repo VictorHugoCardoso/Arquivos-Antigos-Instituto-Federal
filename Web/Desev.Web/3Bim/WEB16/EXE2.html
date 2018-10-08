@@ -1,0 +1,34 @@
+<html>
+	<head>
+	<title>EXE2</title>
+	<script language="Javascript">
+	i = 0;
+	var  par= 0;
+	var impar = 0;
+	var soma = 0;
+	var  media = 0;
+	while(i<10){
+		var num = eval(prompt("Digite um numero inteiro"));
+		
+		if (num%2==0){
+			par++;
+			soma =  soma + num;
+		}
+		
+		else{
+			impar++;
+			media = media +num;
+		}
+		i++;
+	}
+	
+	document.write("numero de pares:" + par ); 
+	document.write(" numeros de impares:" + impar);
+	document.write(" media dos impares:" +  media); 
+	document.write(" soma dos pare:" +soma);
+	</script>
+	
+	</head>
+	<body>
+	</body>
+</html>

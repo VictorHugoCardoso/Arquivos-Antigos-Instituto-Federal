@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function mudaLarg(){
+				var largura = document.getElementById("largura");
+				texto.style.width = largura.value;
+			}	
+		</script>
+		<style>
+			#texto{
+				border: solid 1px black;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="texto">
+		<input id="largura" type="text">
+	</div>
+		<input type="button" value="Enviar" onclick="mudaLarg();">
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>ex6</title>
+		<script language='Javascript'>
+			var id = eval(prompt("Informe sua idade: "));
+			var serie3 = 0;//quantidade de alunos da serie 3
+			var ML = 0;//maior quantidade de livros
+			var AI =0;//alunos que não gostam de fazer redações
+			while(id>0){
+				var serie = eval(prompt("Informe sua serie(1-primeira;2-segunda...)"));
+				var qntdeL = eval(prompt("Quantidade de livros  que você le por mês: "));
+				var red = eval(prompt("Gosta de fazer redação?(1- sim 0-Não)"));
+				if(serie==3){
+					serie3++;
+				}
+				if(serie==4 && qntdeL>=ML){
+					ML = qntdeL;
+				}
+				if(red==0 && serie==3){
+					AI++;
+				}
+				id = eval(prompt("Informe sua idade: "));
+			}
+			AI = (100*AI)/serie3;
+			document.write("Quantidade de alunos da terceira serie: "+serie3);
+			document.write("</br>A maior quantidade de livros lido por um aluno da quarta serie: "+ ML);
+			document.write("</br>A porcentagem de alunos que não gostam de fazer redação na terceira serie: "+AI+"%" );
+			
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

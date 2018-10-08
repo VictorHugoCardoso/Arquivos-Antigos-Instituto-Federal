@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<title>Create Element</title>
+
+	<style>
+		
+	</style>
+	</head>
+
+	<body>
+		<div id="conteudo" style="border: 1px solid black;">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var span = document.createElement('span');
+		span.innerHTML = 'CONTEUDO DA SPAN';
+		var div = document.getElementById('conteudo');
+		div.appendChild(span);
+
+		var input = document.createElement('input');
+		var divPai = div.parentNode;
+		divPai.appendChild(input);
+
+		var img = document.createElement('img');
+		img.src = "100_8876.jpg";
+		img.style.width = "1500px";
+		divPai.appendChild(img);
+	</script>
+</html>

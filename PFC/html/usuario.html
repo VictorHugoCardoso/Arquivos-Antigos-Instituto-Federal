@@ -1,0 +1,67 @@
+<!--Apresenta os dados da tabela usuario no banco de dados como uma tela de perfil, incluido no ControllerUsuario/ConsultaBasica-->
+<div class='caixinhatop titulo'>
+	<span class="titulotexto"><?php echo $usr->getUsername();?>
+	<?php
+		if (isset($_SESSION["id"])){
+			if ($_SESSION["id"] == $usr->getId()){
+				echo "<button class='submit2 icone' id='alteraPerfil'>Alterar Informacoes</button></a>";
+			}
+		}
+	?>
+	</span>
+	<form action="../controller/ControllerUsuario.php" enctype="multipart/form-data" method="POST" id="formimg">
+		<input type="file" id="mudaimg" name="imagem" class="hidden">
+		<input type="hidden" value="<?php echo $usr->getId();?>" id="id" name="id">
+		<input type="hidden" value="mudarimg" id="id" name="acao">
+	</form>
+</div>
+<div class="infousr">
+	<div class="descusr" align="top">
+	
+		<div class="imgusrhover">
+			<div class="absolute mudafotousuario left" align="center">
+
+				<img src="../imagens/upload.png" class="uploadimg"><Br>
+				Mudar imagem
+			</div>
+			<img src="<?php echo $usr->getUrlFoto();?>" class="fotousuario left">
+		</div>
+		<div class="txtusr left">
+			<span class="descsimples block nomeusr"><?php echo $usr->getNome();?></span>
+			<span class="descsimples block"><span class="bold">Cadastrado em: </span> <?php echo $usr->getDtCadastro();?> </span> 
+			<span class="descsimples block"><span class="bold">Ultima atividade:</span> <?php echo $usr->getUltimaAtividade();?></span>
+			<span class="descsimples block"><span class="bold"><?php
+				$av = $usr->getAvaliacao();
+				echo $av;
+				if ($av < 100){
+					echo " - Novato";
+				}else if($av < 500){
+					echo " - Aprendiz";
+				}
+				else if($av < 1000){
+					echo " - Sabedor";
+				}
+				else if($av < 2000){
+					echo " - Nerd";
+				}
+				else{
+					echo " - Mestre";
+				}
+			?></span></span>
+		</div>
+	</div>
+	<div class="detusr">
+		<div class="enchusr"></div>
+		<div class="menuusr left">
+			<a href="#"><span class="descsimples block" id="visaogeral">Visão geral</span></a>
+			<a href="#"><span class="descsimples block" id="topicosusuario">Topicos recentes</span></a>
+			<a href="#"><span class="descsimples block" id="postsusuario">Posts recentes</span></a>
+		</div>
+		<div class="caixadescritivausr left" id="mudar">
+			
+			<?php
+				include_once "../html/visaogeralusuario.php";
+			?>
+		
+		</div>
+	</div>

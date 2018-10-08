@@ -1,0 +1,162 @@
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title> PROVA </title>
+		<style>
+			#site{
+				background:white;
+				margin:auto;
+				width:850px;
+				padding:0 10 5 10;
+				padding-bottom: 20px;
+				padding-right: 20px;
+				padding-left: 20px;
+				padding-left: 20px;
+				border: 1px solid black;
+			}
+			#titulo{
+				background:lightgreen;
+				color:white;
+				margin:0 -10 0 -10;
+				height:80px;
+				text-align:center;
+				text: 50px;
+			}
+			h1{
+				font-size: 25px;
+				padding-top: 25px;
+				color: black;
+			}
+			span{
+				font-weight: bold;
+			}
+			table{
+				padding-top: 20px;
+				padding-bottom:25px;
+			}
+			td{
+				padding-top:40px;
+				padding-left:50px;
+				padding-right:15px;
+			}
+			button.asd{
+				background:black;
+				color:white;
+				font-weight:bold;
+			}
+			div.asd{
+				font-size: 30px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+			}
+		</style>
+		<script language="Javascript">
+			function fundo(){
+				var div = document.getElementById("site");
+				var cor = document.getElementById("corf");
+				div.style.background = cor.value;
+			}
+			function destaca(){
+				var div = document.getElementById("destaque");
+				var opcao = document.getElementById("opcao");
+				var opcao1 = document.getElementById("opcao1");
+				var opcao2 = document.getElementById("opcao2");
+				var result = 0 ; 
+				if (opcao.value == "fun"){
+					result = result + 10;
+				}
+				if (opcao.value == "med"){
+					result = result + 200;
+				}
+				if (opcao.value == "sup"){
+					result = result + 300;
+				}
+				if (opcao1.value == "1"){
+					result = result + 100;
+				}
+				if (opcao1.value == "3"){
+					result = result + 300;
+				}
+				if (opcao1.value == "4"){
+					result = result + 400;
+				}
+				if (opcao2.value == "pas"){
+					result = result + 100;
+				}
+				if (opcao2.value == "ph"){
+					result = result + 200;
+				}
+				if (opcao2.value == "jav"){
+					result = result + 300;
+				}
+				div.style.background = "lightblue";
+				div.innerHTML = "A nota do seu currículo é: "+result;
+			}
+			function but(){
+				var div = document.getElementById("bon");
+				div.style.background = "blue";
+				div.style.width = "127";
+			}
+			function butt(){
+				var div = document.getElementById("bon");
+				div.style.background = "white";
+				div.style.width = "127";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="site">
+			<div id="titulo">
+			<h1>Sistema de avaliação de currículo</h1>
+			</div>
+			<h1>PROVA: Victor Hugo Cardoso Mendes</h1>
+			Digite a cor de fundo: <input type="text" id="corf"/> 
+			<button onclick="fundo()">Alterar</button> <br><br><br>
+			<span>Escolha abaixo as opções que se aplicam ao seu currículo:</span> 
+			<table>
+				<tr>
+					<td>Escolaridade:</td>
+					<td>
+						<select id="opcao">
+						<option value="fun"> Ensino Fundamental</option>
+						<option value="med"> Ensino Médio</option>
+						<option value="sup"> Ensino Superior</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Tempo de experiência:</td>
+					<td>
+						<select id="opcao1">
+						<option> Nenhuma</option>
+						<option value="1"> 1 Ano</option>
+						<option value="3"> 3 Anos</option>
+						<option value="4"> 4 Anos ou Mais</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Técnica de programação:</td>
+					<td>
+						<select id="opcao2">
+						<option> Nenhuma</option>
+						<option value="pas"> Pascal</option>
+						<option value="ph"> PHP</option>
+						<option value="jav"> Java</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<div id="bon">
+			<button id="asd" class="asd" onclick="destaca()" onmouseover="but()" onmouseout="butt()">Avaliar Currículo</button> 
+			</div><br><br>
+			
+			<div class="asd" id="destaque">
+			
+			</div>
+		</div>
+	</body>
+
+</html>

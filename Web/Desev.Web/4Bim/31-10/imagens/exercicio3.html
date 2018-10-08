@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Exercicio 3</title>
+		<script language="Javascript">
+		function grifar(){
+			var imagem= document.getElementsByTagName('img');
+			for(i=0;i<imagem.length;i++){
+			imagem[i].style.border="1px dotted #000000";
+			}
+		}
+		function voltar(){
+		var imagem= document.getElementsByTagName('img');
+			for(i=0;i<imagens.length;i++){
+			imagem[i].style.border="none";
+			}
+		}
+			
+		</script>
+		<style type="text/css">
+		h1{
+		border-bottom:1px solid black;
+		}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" value="destaca" onclick="grifar();">
+		<input type="button" value="volta" onclick="voltar();"><br/>
+		<h1></h1>
+		<img src="carro1.png">
+		<img src="carro2.png">
+		<img src="carro3.png">
+		<img src="carro4.png">
+		
+	</body>
+</html>

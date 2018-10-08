@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function pintar(){
+				alert("teste");
+				var div = document.getElementsByTagName("div");
+				alert("teste");
+				div[0].style.background="red";
+				div[1].style.background="red";
+				div[2].style.background="red";
+			}	
+		</script>
+	</head>
+	<body>
+		<div>Texto1</div>
+		<div>Texto2</div>
+		<div>Texto3</div>
+		<input type="button" value="Pintar" onclick="pintar();">
+	</body>
+</html>

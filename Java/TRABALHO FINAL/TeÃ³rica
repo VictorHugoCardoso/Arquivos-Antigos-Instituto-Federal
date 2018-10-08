@@ -1,0 +1,29 @@
+Trabalho sobre Versionamento
+
+Nome: Victor Hugo Cardoso Mendes - 2 Informática (2013)
+
+Parte Teórica
+
+
+- (1) O que é controle de versão?
+	Um sistema de versionamento possibilita gravar todas as alterações feitas a um arquivo.
+	É um software que tem finalidade de fazer o gerenciamento de versões de um determinado arquivo.
+	Principalmente utilizado quando é um programa feito em grupo.
+	
+
+- (2) Quais as principais ferramentas
+	-Servidores 
+	-Clientes
+	
+	
+	
+- (3) Como é o processo de desenvolvimento de projetos em equipe quando se utiliza uma ferramenta de versionamento?	
+
+	O processo é baseado em mesclagens otimista...
+	
+		Mesclagem Otimista - 
+		
+			Todos os programadores devem baixar constantemente a ultima versão do seu programa do servidor para que sempre programa na versão mais atualizada.
+			Quando um programador da upload de um arquivo para o servidor e ja há uma versão anterior daquele software o sistema de versionamento da conta de mesclar esses 2 arquivos e implementar o novo código sem destruir o anterior.
+			Se por acaso essa nova atualização abranger linhas de códigos que foram recentementes alteradas por outro programador depois de você ter baixado a versão anterior , o programa vai acusar que você esta tentando atualizar linhas que foram atualizadas recentemente e vai baixar automaticamente a ultima versão do programa porque nesse caso o software nao é capaz de mesclar automaticamente essas linhas, portanto fica a trabalho do programador saber qual alteração foi mais relevante e reenviar para o servidor a versão mais atualizada.
+

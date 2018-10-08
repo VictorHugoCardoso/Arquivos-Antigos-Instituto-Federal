@@ -1,0 +1,9 @@
+CONTEÚDO DA PROVA:
+
+- innerHTML
+- getElementById, getElementByTagName, getElementByName
+- funções string: length, replace, toLowerCase, toUpperCase, substring
+- createElement(); parentNode(); appendChild();
+- getAttribute();
+- Array(); length; percorrer o array;
+- CSS pelo javascript: elemento.style.color = 'red';

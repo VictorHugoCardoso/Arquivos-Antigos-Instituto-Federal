@@ -1,0 +1,25 @@
+-ERROS-
+
+*-------------------------------------------------------*
+|							|
+|	De Sintaxe   ->  Aparece na Compilação		|
+|							|
+|	De Lógica    ->  Aparece nos Testes		|
+|							|
+|	De Ambiente  ->  Tratamento de Exceções		|
+|							|
+*-------------------------------------------------------*
+
+
+
+Exceções
+
+	-> Eventos que podem fazer o programa falhar , geralmente relacionados ao ambiente.
+		Ex: - Arquivo corrompido;
+		    - Falha na rede;
+		    - Dados de tipo diferente do esperado
+
+Tratamento de exceções
+
+	-> Tentativa de contornar o problema ou ao menos informar ao usuário de uma forma mais amigável.
+

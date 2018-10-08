@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Ex7</title>
+
+    </head>
+
+    <body>
+
+	    <script language="Javascript">
+		    function alteraFundo(h){
+                var cor = "";
+                if(h > 0 && h < 13){
+		            cor = "#A9F5F2";
+                }
+                else if(h >= 13 && h < 19){
+		            cor = "#F7D358";
+                }
+                else if(h > 18 && h <= 24){
+		            cor = "#DF3A01";
+                }
+                return cor;
+            }	            
+		    var hoje = new Date();
+			var hora = hoje.getHours();
+            document.bgColor = alteraFundo(hora);
+	    </script>
+
+    </body>
+</html>

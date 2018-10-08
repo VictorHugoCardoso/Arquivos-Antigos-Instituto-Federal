@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Muda fundo genérico</title>
+	    <script language="Javascript">
+        	
+            // definição dentro de uma função no javascript
+		    function altera(corFundo,corTexto){
+                document.bgColor = corFundo;
+                document.fgColor = corTexto;
+            }		
+
+	    </script>
+    </head>
+
+    <body>
+
+        <input type="button" value="Azul" onmouseover="altera('blue','red')"/>
+
+        <input type="button" value="Laranja" onmouseout="altera('orange','blue')"/>
+
+        <input type="button" value="Verde" onclick="altera('green','yellow')"/>
+
+        <br><br><h1>Texto Texto Texto Texto Texto</h1>
+
+    </body>
+</html>

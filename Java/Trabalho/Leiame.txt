@@ -1,0 +1,10 @@
+Intruções de uso para Windows
+
+1 - Segura a tecla Windows e clique "R".
+2 - Na janela que surgir digite "cmd".
+4 - Digite "javac principal.java"
+5 - Logo depois digite "java principal" e siga as instruções do programa.
+6 - Vá Ate a pasta escolhida e Abra o arquivo "index.html"
+
+
+*Pressupõe-se que na pasta desejada ja exista o arquivo .csv completo ,de acordo com o enunciado da questão

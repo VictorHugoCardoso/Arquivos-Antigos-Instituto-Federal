@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Ex2</title>
+	<script language="Javascript">
+		
+	var num = 0;
+	var qtde = 0;
+	var par = 0;
+	var soma = 0;
+	var impar = 0;
+	var total = 0;
+	var media = 0;
+
+		while(qtde < 10){
+		var num = eval(prompt("Digite um algarismo inteiro: "));
+		
+		qtde++;
+			if(num % 2 == 0){
+				par++;
+				soma = soma + num;
+			}else{
+				impar++;
+				total = total + num;
+				media = total/impar;
+			}
+
+		}
+
+
+		document.writeln("Quantidade de Pares: " + par);
+		document.writeln("Soma dos Pares: " + soma);
+		document.writeln("Quantidade de ImPares: " + impar);
+		document.writeln("Media dos ImPares: " + media);			
+
+
+
+
+	</script>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+
+
+</html>

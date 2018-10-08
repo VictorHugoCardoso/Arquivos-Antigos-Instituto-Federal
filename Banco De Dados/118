@@ -1,0 +1,15 @@
+1)
+
+A junção externa LEFT OUTER JOIN retorna todas as linhas que satisfazem a condição da junção mais as linhas da tabela que ficam a esquerda da consulta, mesmo que não satisfaçam a condição.
+
+A junção RIGHT OUTER JOIN faz a mesma coisa que a LEFT OUTER JOIN, mas agora para a tabela que fica a direita ou seja retorna todas as linhas relacionadas mais as linhas a direita que nao possuem correspondente  na tabela da esquerda. Por exemplo vamos fazer a mesma consulta, mas agora alterando a ordem das tabelas e o tipo da juncao. Essa nova consulta ira retornar os mesmo dados da cconsulta anterior.
+
+
+
+
+
+2) 
+
+
+
+3) SELECT * FROM tbasd ON tbAutor.codigo_categoria = tbTitulo.codigo_

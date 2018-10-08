@@ -1,0 +1,15 @@
+Modificadores de acesso:
+
+
+-Público [public]: Métodos e atributos declarados como públicos podem ser vistos e modificados por qualquer objeto.
+
+-Privado [private]: Métodos e atributos private só podem ser vistos e modificados de dentro da própria classe
+
+-Protegido [protected]: Métodos e atributos											
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+h1{
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: blue;
+}
+a:visited{
+	color: blue;
+	font-weight: bold;
+}
+a:link{
+	color: blue;
+}
+a:active{
+	color: blue;
+	font-weight: bold;
+}
+
+div{
+	padding: 10px;
+	background: #CCC;
+}
+
+ul{
+	list-style: disc;
+}
+
+span.a{
+	padding: 10px;
+	background: yellow;
+}
+
+span.b{
+	padding: 10px;
+	background: orange;
+}
+
+
+span.c{
+	padding: 10px;
+	background: #87CEFA;
+}
+

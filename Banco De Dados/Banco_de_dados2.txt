@@ -1,0 +1,29 @@
+ALTER TABLE tbCliente
+ADD Celular_Cli varcbar(8);
+
+ALTER TABLE tbCliente
+DROP Celular_Cli;
+
+ALTER TABLE tbCliente
+MODIFY Cidade_Cli char(25);
+
+ALTER TABLE tbCliente
+ALTER COLUMN UF_cli SET DEFAULT 'SP';
+
+ALTER TABLE tbCliente
+ALTER COLUMN UF_cli DROP DEFAULT;
+
+ALTER TABLE tbCliente
+MODIFY Cidade_Cli char(25) NULL;
+
+ALTER TABLE tbTitulo
+DROP foreign key fk_tbTitulo_tbClasse;
+
+ALTER TABLE tbTitulo
+ADD CONSTRAINT fk_tbTitulo_tbClasse foreign key (codigo_categoria)
+	REFERENCES tbCategoria(codigo_categoria);
+ALTER TABLE tbCliente
+ADD CONSTRAINT UN_CPFcli UNIQUE (cpf_cli) ;
+
+ALTER TABLE tbCliente
+DROP INDEX UN_cpfcli;

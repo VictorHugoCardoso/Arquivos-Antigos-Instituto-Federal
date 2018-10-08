@@ -1,0 +1,5 @@
+<a href="telaPost.php?id=<?php echo $vetNot->getId_topico(); ?>&acao=listarposts&pag=<?php echo $vetNot->getUltimoPost(); ?>" onclick="return excluirNotificacao( <?php echo $_SESSION["id"] ?> , <?php echo $vetNot->getId_topico() ?>);">
+	<div class='cadaNotificacao'>
+		Houve uma atualização em seu Tópico: <?php echo substr($vetNot->getTituloTop(), 0 , 15) ?> ...
+	</div>
+</a>

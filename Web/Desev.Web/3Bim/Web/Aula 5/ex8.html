@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Ex8</title>
+	    <script language="Javascript">
+            function converter(v,o){
+                switch(o){
+                    case 1:
+                        quantia = v * 0.47;
+                        document.write("A quantia de R$" + v + " equivale a $" + quantia + " dólares.");
+                        break;
+                    case 2:
+                        quantia = v / 0.43;
+                        document.write("A quantia de R$" + v + " equivale a " + quantia + " pesos.");
+                        break;
+                    case 3:
+                        quantia = v * 0.38;
+                        document.write("A quantia de R$" + v + " equivale a " + quantia + " euros.");
+                        break;
+                }
+            }		    
+            var valor = eval(prompt("Digite a quantia em reais (R$):"));
+            var opcao = eval(prompt("Converter para: (1)dolar, (2)peso, (3)euro"));
+            var fim = converter(valor,opcao);
+	    </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

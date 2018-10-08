@@ -1,0 +1,78 @@
+.alertify .ajs-dialog {
+  background-color: white;
+  box-shadow: 15px 15px 20px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid green;
+}
+.alertify .ajs-header {
+  color: red;
+  font-weight: bold;
+  background: white;
+  border-bottom: green 2px solid;
+  border-radius: 2px 2px 0 0;
+}
+.alertify .ajs-body {
+  color: black;
+
+}
+.alertify .ajs-body .ajs-content .ajs-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 2px;
+  border: 4px solid green;
+}
+.alertify .ajs-body .ajs-content p {
+  margin: 0;
+  color: red;
+}
+.alertify .ajs-footer {
+  background-color: white;
+  border-top: green 2px solid;
+  border-radius: 0 0 2px 2px;
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid green;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok {
+  color: green;
+  border: 2px solid green;
+  border-radius: 3px;
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok:hover{
+  background: green;
+  color:white;
+  box-shadow:0px 0px 10px 3px #CCC;
+  border: 2px solid white;
+  transition-duration: 0.5s;
+}
+.alertify-notifier .ajs-message {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  text-align: center;
+  border: solid 1px #ddd;
+  border-radius: 2px;
+}
+.alertify-notifier .ajs-message.ajs-success {
+  color: #fff;
+  background: rgba(91, 189, 114, 0.95);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+.alertify-notifier .ajs-message.ajs-error {
+  color: #fff;
+  background: rgba(217, 92, 92, 0.95);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+.alertify-notifier .ajs-message.ajs-warning {
+  background: rgba(252, 248, 215, 0.95);
+  border-color: #999;
+}
+.ajs-content{
+  color: red;
+}

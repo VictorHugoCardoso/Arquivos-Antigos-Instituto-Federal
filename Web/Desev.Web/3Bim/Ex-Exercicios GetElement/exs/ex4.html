@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title> EX 4 </title>
+		<script language="Javascript">
+			function destaca(){
+				var altura = document.getElementById("alt");
+				var peso = document.getElementById("pes");
+				var div = document.getElementById("emDestaque");
+				var result = peso.value / (altura.value * altura.value);
+				if (result > 25){
+					div.style.color = "red";
+					div.innerHTML = "OBESO";
+				}
+				if (result < 18 ) {
+					div.style.color = "yellow";
+					div.innerHTML = "DESNUTRIDO";
+				}
+				if (result <= 25  && result >= 18){
+					div.style.color = "green";
+					div.innerHTML = "NORMAL";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		Altura: <input type="text" id="alt"/> <br>
+		Peso: <input type="text" id="pes"/> <br>
+		<button onclick="destaca()">Enviar</button> <br>
+		
+		<div id="emDestaque">
+		
+		
+		</div>
+	</body>
+
+</html>

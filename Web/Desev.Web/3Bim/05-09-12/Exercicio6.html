@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Exercicio 6</title>
+		<script language="Javascript">
+			var saldo=eval(prompt("Digite o saldo medio desse cliente"));
+			var bonus;
+			var total;
+			
+			if(saldo<=200){
+				bonus=saldo*0;
+				total=saldo;
+			}else{
+				if(saldo>200 && saldo<=400){
+					bonus=saldo*0.2;
+					total=saldo+bonus;
+				}else{
+					if(saldo<400 && saldo <=600){
+						bonus=saldo*0.3;
+						total=saldo+bonus;
+					}else{
+						bonus=saldo*0.4;
+						total=saldo+bonus;
+					}
+				}
+			}
+			document.writeln("O saldo Final de: "+total);
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!--Transforma os dados do banco de dados da tabela post em informaçao Texto/grafica, incluido no ControllerPost/consultar-->
+<!--Arrumar o alterar-->
+<div class="boxmsg">
+	<div class="divInputPesquisa">
+		<div style="margin-top: 20px;">
+			<input id="inputPesquisa" class="inputCadastro clicktoenter" type="text" placeholder="Pesquisar..."><a href="javascript:consulta()" onclick="consulta()" class="enterclick"> <img src="../imagens/lupa.png" class="iconePesquisa"></a>
+		</div>
+		<div class="divFiltro left">
+			<div class="seta-cima" id="setaPesquisa"></div>
+			<div class="divFiltro1">
+				<input type="radio" name="pesquisa1" class="pesquisa1" value="usuario">Usuário<br>
+				<input type="radio" name="pesquisa1" class="pesquisa1" value="post">Post<br>
+				<input type="radio" name="pesquisa1" class="pesquisa1" value="topico">Tópico<br>
+				<input type="radio" name="pesquisa1" class="pesquisa1" value="faq">Dúvida<br>
+			</div>
+			<div class="divFiltro2">
+				<input type="radio" name="pesquisa2" class="pesquisa2" value="nome" checked="true">Nome<br>
+				<input type="radio" name="pesquisa2" class="pesquisa2" value="email">Email<br>
+				<input type="radio" name="pesquisa2" class="pesquisa2" value="localidade">Localidade<br>
+			</div>
+		</div>
+	</div>
+	<div class="resultado">
+		
+	</div>
+</div>

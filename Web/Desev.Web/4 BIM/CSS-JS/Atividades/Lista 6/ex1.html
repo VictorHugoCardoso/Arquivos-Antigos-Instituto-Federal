@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+		function valida(form){
+			var nome = form.nome.value;
+			var cpf = form.cpf.value;
+			var email = form.email.value;
+			var mensagem = "";
+			
+			if(nome == ""){
+				mensagem = mensagem + 'Preencha o nome\n';
+			}if(cpf == ""){
+				mensagem = mensagem + 'Preencha o cpf\n';
+			}if(email == ""){
+				mensagem = mensagem + 'Preencha o email';
+			}if((nome != "") && (cpf != "") && (email != "") ){
+				alert("Formulario enviado com sucesso!");
+				return true;
+			}else{
+				alert(mensagem);
+				return false;
+			}
+		}
+		
+		</script>
+	</head>
+	<body>
+	<form onsubmit='return valida(this);'>
+		Nome:<input type="text" name="nome"/></br>
+		CPF:<input type="text" name="cpf"/></br>
+		Email:<input type="text" name="email"/></br>
+		<input type="submit" value="enviar">
+	
+	</form>	
+	</body>
+</html>

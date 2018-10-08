@@ -1,0 +1,24 @@
+ <div class="caixapesq">
+	<div class="imgpesq">
+		<img class="imgtop" src="../imagens/toppadrao.png" width="30" height="30">
+	</div>
+	<div class="nomepesqusr">
+		<a href="../telas/telaPost.php?id=<?php echo $top->getId();?>&acao=listarposts&pag=1"> <span class="n1pesq"><?php echo $top->getTitulo(); ?></span></a>
+		<span class="n2pesq"><?php echo substr($top->getPost()->getTexto(), 0,70); ?>...</span>
+	</div>
+	<div class="dadospesq">
+		<span class="n1pesq">
+		<?php
+			echo "Criado em: ". $top->getDt_criacao();
+		?></span>
+		<span class="n1pesq">
+		<?php 
+			
+			//echo '<img src="'.$item->getUsuario()->getUrlFoto().'" width="15" height="15">';
+			echo "Por: ";
+			echo $top->getUsuario()->getUsername();
+			
+		?></span>
+	</div>
+
+</div>

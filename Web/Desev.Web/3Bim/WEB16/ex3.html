@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>ex3</title>
+		<script language='Javascript'>
+			for(i=0;i==10;i++){
+				var cod = prompt("Informe seu codigo");
+				var horas = eval(prompt("Informe as horas de trabalho"));
+				var dep = eval(prompt("Informe o número de dependentes"));
+				var salario = (12*horas)+(dep*40);
+				var inss = salario*0.085;
+				var ir = salario*0.05;
+				salario = salario - (ir+inss);
+				document.write("</br>Codigo:"+cod);
+				document.write("</br>Desconto do INSS: "+ inss);
+				document.write("</br>Desconto do IR: "+ ir);
+				document.write("</br>Salario líquido: "+ salario);
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<DOCTYPE HTML>
+<head lang="pt-br">
+	<meta charset="utf-8">
+	<title>Exercicio 7</title>
+	<script>
+		function muda(id){
+			var identifica =  document.getElementById("mudar");
+			var identificado =  document.getElementById(id);
+			var texto = identificado.getAttribute('src');
+			identifica.setAttribute("src",texto);
+		}
+		function seleciona(id){
+			var identifica =  document.getElementById(id);
+			identifica.style.border="dotted 2px red";
+		}
+		function deseleciona(id){
+			var identifica =  document.getElementById(id);
+			identifica.style.border="dotted 0px red";
+		}
+	</script>
+	<style>
+	img {
+		float:left;
+	}
+	body{
+		background:gray;
+	}
+	#div_zero{
+		margin:auto;
+		margin-top:100px;
+		width:500px;
+		height:550px;
+		background-color:#CCC;
+		border:1px solid white;
+	}
+	#div_um{
+		padding:10px;
+	}
+	#div_dois{
+		border:1px solid gray;
+		width:200px;
+		height:230px;
+		float:right;
+		margin:10px;
+	}
+	#div_um{
+		float:left;
+	}
+	#input{
+		float:left;
+	}
+	</style>
+</head>
+<body>
+	<div id="div_zero" align="center">
+		<div id="div_um">
+			<img onmouseover="seleciona('carro1')" onmouseout="deseleciona('carro1')" ondblclick="muda('carro1')" src="carro1.png" id="carro1">
+			<br>
+			<img onmouseover="seleciona('carro2')" onmouseout="deseleciona('carro2')" ondblclick="muda('carro2')" src="carro2.png" id="carro2">
+			<br>
+			<img onmouseover="seleciona('carro3')" onmouseout="deseleciona('carro3')" ondblclick="muda('carro3')" src="carro3.png" id="carro3">
+			<br>
+			<img onmouseover="seleciona('carro4')" onmouseout="deseleciona('carro4')" ondblclick="muda('carro4')" src="carro4.png" id="carro4">
+		</div>
+		<div id="div_dois">
+			<h3 align="left">Selecione</h3>
+			<img align="left" src="branco.png" id="mudar">
+			<input align="left" id="input" type="button" value="confirmar">
+		</div>
+	</div>
+</body>
+</html>

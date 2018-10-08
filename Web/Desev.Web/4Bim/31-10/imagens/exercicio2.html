@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Exercicio 2</title>
+		<script language="Javascript">
+		function exibir(){
+			var txt = document.getElementsByName('texto');
+			for(i=0;i<txt.length;i++){
+			txt[i].style.background="yellow";
+			}
+		}
+		</script>
+	</head>
+
+	<body>
+		<input type="text" name="texto"/><br/>
+		<textarea cols=40 rows=10 name="texto">um texto criativo haha :))
+		</textarea><br/>
+		<span name="texto">outro texto qualquer</span><br/>
+		<input type="button" value="clique" onclick="exibir();"/>
+	</body>
+</html>

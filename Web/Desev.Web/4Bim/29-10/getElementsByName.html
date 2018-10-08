@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> getElementsByName.html </title>
+		<script language="Javascript">
+	function exibe(){
+		// getElementsByName
+		// obtem todas as tags de um nome (name) especifico a funcao getElementsByName retorna um array
+		var inputs = document.getElementsByName('importante');
+		
+		alert(inputs.length);
+			
+		for(i=0;i<inputs.length;i++){
+			alert(inputs[i].value);
+			
+		}
+	}
+		</script>
+	</head>
+	<body>
+
+	Nome: <input type="text" id="nome" name="importante"/><br/>
+	CPF: <input type="text" id="cpf" name="importante"/><br/>
+	RG: <input type="text" id="rg" name="rg"/><br/>
+	Idade: <input type="text" id="idade" name="idade"/><br/>
+	<input type="button" value="clique" onclick='exibe();'><br/>
+
+	</body>
+</html>

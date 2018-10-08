@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function mudaCor(id){
+				var text = document.getElementById('texto');	
+				text.style.backgroundColor = id.value;				
+			}	
+		</script>
+	</head>
+	<body>
+	
+	<form>
+		<select id="cores" onchange="mudaCor(this)">
+			<option value='blue'>Azul</option>
+			<option value='green'>Verde</option>
+			<option value='yellow'>Amarelo</option>
+		</select> </br>
+		<textarea id="texto" cols='20' rows='10' value="texto"></textarea>
+	</form>
+		
+	</body>
+</html>

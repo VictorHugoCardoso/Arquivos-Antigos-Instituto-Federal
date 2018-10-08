@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script language="Javascript">
+			function pintar(){
+				var tags = document.getElementsByName("texto");
+				tags[0].style.background = "yellow";
+				tags[1].style.background = "yellow";
+				tags[2].style.background = "yellow";
+			}	
+		</script>
+	</head>
+	<body>
+		<input type="text" name="notexto" value="não é texto"></br>
+		<input type="text" name="texto" value="é texto" ></br>
+		<span name="texto">é texto</span></br>
+		<textarea name="texto">é texto</textarea></br>
+		<input type="button" value="Pintar" onclick="pintar();">
+	</body>
+</html>

@@ -1,0 +1,5 @@
+/usr/lib/jvm/java-1.6.0-openjdk/bin/javadoc -d /media/VICTOR/Escola/Java /media/VICTOR/Escola/Java/principal.java						|									|				| 															|
+O 1 o lugar onde esta o javadoc         -d qual o diretoria vai salvar os arquivos 	   o arquivo que deseja fazer a documentacao
+
+
+Obs : nao esqueces os espaços

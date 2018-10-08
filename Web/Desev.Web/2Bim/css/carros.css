@@ -1,0 +1,19 @@
+body{
+}
+h1{
+	text-decoration: underline;
+}
+ul.a{
+	list-style: square;
+}
+ul.b{
+	list-style: disc;
+}
+div.a{
+	color: red;
+	font-weight: bold;
+}
+div.b{
+	color: blue;
+	font-weight: bold;
+}

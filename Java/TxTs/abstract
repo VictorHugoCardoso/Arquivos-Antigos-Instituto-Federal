@@ -1,0 +1,9 @@
+Classe Abstrata
+
+- Não pode possuir instancias diretas mas suas descendentes sim
+
+- São usadas para modelar caracteristicas parciais de uma categoria de objetos.As demais devem ser implementadas em classes mais especializadas
+
+- As classes concretas sao aquelas que podem ser instanciadas 
+
+(podem ser instanciadas - criar objetos da classe)

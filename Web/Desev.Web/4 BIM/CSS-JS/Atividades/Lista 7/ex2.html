@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title> New Document</title>
+		<script type="text/javascript">	
+			function check(id){
+				var pai = id.parentNode;
+				var check = id.checked;
+				if(check == true){
+					pai.style.backgroundColor = 'tan';	
+
+				}else{
+					pai.style.backgroundColor = 'white';
+				}			
+			}
+		</script>	
+
+	</head>	
+	<body>
+		<h1>Selecione seu carro: </h1>
+		
+		<table cellspacing="30">
+			<tr>
+				<td>Bettle</td>
+				<td>
+						<input type="checkbox" id="bettle" onChange="check(this);"></input>
+						<img src="imagens/carro2.png"></img>
+				</td>
+			</tr>
+			<tr>
+				<td>Ferrari</td>
+				<td>
+					<input type="checkbox" id="ferrari" onChange="check(this);">
+					<img src="imagens/carro0.png"></img>
+				</td>
+			</tr>
+			<tr>
+				<td>Nissan</td>
+				<td>
+					<input type="checkbox" id="nissan" onChange="check(this);">
+					<img src="imagens/carro4.png"></img>
+				</td>
+			</tr>
+		</table>
+	
+	</body>
+	
+</html>

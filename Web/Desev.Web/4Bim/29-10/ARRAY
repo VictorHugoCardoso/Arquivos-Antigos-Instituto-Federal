@@ -1,0 +1,9 @@
+Como usar ARRAY - VETOR no JAVASCRIPT
+
+Funções para obter uma referencia a uma ou várias tags:
+-> getElementsByTagName -> <input name=''>
+->getElementsByName -> <input>
+->getElementById -> <input id=''>
+
+Função para alterar o conteúdo da uma TAG:
+->innerHTML

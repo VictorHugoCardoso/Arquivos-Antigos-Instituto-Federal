@@ -1,0 +1,22 @@
+document.getElementById -> pega somente a tag
+
+eval() -> converte para inteiro ou float
+
+parseInt() -> converte para inteiro
+
+var idade = document.getElementById("idade");
+idade.value = idade.value + 10; (value permite acessar o valor dentro da tag,input, select)
+
+innerHTML -> permite alterar o conteudo de uma tag (usada span , div , ...)
+
+idade.style.backgroundcolor = "red"
+
+CSS				JAVASCRIPT
+font-style		fontStyle
+font-size 		fontSize
+...
+color			color
+
+<input type="text" onfocus="alterafundo()">
+
+

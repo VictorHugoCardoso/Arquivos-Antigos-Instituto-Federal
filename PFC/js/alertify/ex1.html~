@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="alertify/css/alertify.css">
+		<link rel="stylesheet" href="alertify/css/themes/semantic.css">
+		<script src="alertify.js"></script>
+		<script>
+			function asd(){
+				alertify.alert("This is an alert dialog.", function(){
+				alertify.message('OK');
+		    });
+		    }
+		    
+		</script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<input type="button" value="ALERT" id="alert" onclick="asd()">
+	</body>
+</html>
